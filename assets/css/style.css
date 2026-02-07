@@ -290,7 +290,19 @@ h6 {
 .hero-content-container {
     position: relative;
     z-index: 10;
-    padding-top: 80px;
+    padding-top: 150px;
+    /* Increased from 80px to clear navbar */
+}
+
+@media (max-width: 768px) {
+    .hero-content-container {
+        padding-top: 140px;
+    }
+
+    .hero-title {
+        font-size: 2.5rem !important;
+        /* Force smaller size on mobile */
+    }
 }
 
 .hero-title {
