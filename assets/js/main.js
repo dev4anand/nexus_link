@@ -184,18 +184,49 @@ function initBackgroundAnimation() {
 }
 
 // Mobile Menu Auto-Close Fix
+// Mobile Menu Scroll-then-Close Fix
 function initMobileMenuClose() {
     const offcanvasEl = document.getElementById('offcanvasNavbarLight');
     if (!offcanvasEl) return;
 
     const navLinks = offcanvasEl.querySelectorAll('.nav-link');
-    const offcanvasInstance = new bootstrap.Offcanvas(offcanvasEl); // Get or create instance
+    // We don't need to create a new instance if we just want to get the existing one later
 
     navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasEl);
-            if (bsOffcanvas) {
-                bsOffcanvas.hide();
+        link.addEventListener('click', (e) => {
+            const href = link.getAttribute('href');
+
+            // Only handle anchor links
+            if (href && href.startsWith('#')) {
+                e.preventDefault();
+
+                const targetId = href.substring(1);
+                // Handle "Home" link which might be just "#" or "#top"
+                const targetEl = targetId ? document.getElementById(targetId) : document.body; // Default to top if empty hash
+
+                if (targetEl) {
+                    // 1. Scroll to the section
+                    targetEl.scrollIntoView({ behavior: 'smooth' });
+
+                    // 2. Close the offcanvas after a slight delay to allow scroll to start/user to see movement
+                    // The user specifically requested "INTIALLY SCROLL TO THE SECTION THEN CLOSE THE NAV BAR"
+                    setTimeout(() => {
+                        const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasEl);
+                        if (bsOffcanvas) {
+                            bsOffcanvas.hide();
+                        }
+                    }, 500); // 500ms delay
+                }
+            } else if (href === '#') {
+                // Handle "Home" link if it's just "#"
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                setTimeout(() => {
+                    const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasEl);
+                    if (bsOffcanvas) {
+                        bsOffcanvas.hide();
+                    }
+                }, 500);
             }
         });
     });
