@@ -8,12 +8,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize standard interactions
     initNavbarScroll();
     initScrollAnimations();
-    
+
     // Canvas Background Animation
     initBackgroundAnimation();
 
     // Init Swiper
     initSwiper();
+
+    // Init Mobile Menu Close on Click
+    initMobileMenuClose();
 });
 
 // Theme Toggle Logic
@@ -39,10 +42,10 @@ function initThemeToggle() {
         btn.addEventListener('click', () => {
             const currentTheme = html.getAttribute('data-theme');
             const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            
+
             html.setAttribute('data-theme', newTheme);
             localStorage.setItem(LOCAl_STORAGE_KEY, newTheme);
-            
+
             // Re-init background to change particle colors
             initBackgroundAnimation();
         });
@@ -52,7 +55,7 @@ function initThemeToggle() {
 // Navbar Scroll Effect
 function initNavbarScroll() {
     const header = document.querySelector('.glass-header');
-    
+
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             header.classList.add('scrolled');
@@ -106,23 +109,23 @@ let canvasAnimationId;
 
 function initBackgroundAnimation() {
     const canvas = document.getElementById('bg-canvas');
-    if(!canvas) return;
+    if (!canvas) return;
 
     const ctx = canvas.getContext('2d');
     const html = document.documentElement;
     const isDark = html.getAttribute('data-theme') === 'dark';
-    
+
     // Stop previous loop
     if (canvasAnimationId) cancelAnimationFrame(canvasAnimationId);
 
     let width, height;
     let particles = [];
-    
+
     function resize() {
         width = canvas.width = window.innerWidth;
         height = canvas.height = window.innerHeight;
     }
-    
+
     class Particle {
         constructor() {
             this.x = Math.random() * width;
@@ -130,25 +133,25 @@ function initBackgroundAnimation() {
             this.vx = (Math.random() - 0.5) * 0.5;
             this.vy = (Math.random() - 0.5) * 0.5;
             this.size = Math.random() * 2;
-            
+
             // Colors based on theme
             if (isDark) {
-                 this.color = Math.random() > 0.5 ? 'rgba(0, 243, 255, 0.3)' : 'rgba(112, 0, 255, 0.3)';
+                this.color = Math.random() > 0.5 ? 'rgba(0, 243, 255, 0.3)' : 'rgba(112, 0, 255, 0.3)';
             } else {
-                 this.color = Math.random() > 0.5 ? 'rgba(0, 123, 255, 0.3)' : 'rgba(102, 16, 242, 0.3)';
+                this.color = Math.random() > 0.5 ? 'rgba(0, 123, 255, 0.3)' : 'rgba(102, 16, 242, 0.3)';
             }
         }
-        
+
         update() {
             this.x += this.vx;
             this.y += this.vy;
-            
+
             if (this.x < 0) this.x = width;
             if (this.x > width) this.x = 0;
             if (this.y < 0) this.y = height;
             if (this.y > height) this.y = 0;
         }
-        
+
         draw() {
             ctx.fillStyle = this.color;
             ctx.beginPath();
@@ -156,7 +159,7 @@ function initBackgroundAnimation() {
             ctx.fill();
         }
     }
-    
+
     function init() {
         resize();
         particles = [];
@@ -164,7 +167,7 @@ function initBackgroundAnimation() {
             particles.push(new Particle());
         }
     }
-    
+
     function animate() {
         ctx.clearRect(0, 0, width, height);
         particles.forEach(p => {
@@ -173,9 +176,27 @@ function initBackgroundAnimation() {
         });
         canvasAnimationId = requestAnimationFrame(animate);
     }
-    
+
     window.removeEventListener('resize', resize);
     window.addEventListener('resize', resize);
     init();
     animate();
+}
+
+// Mobile Menu Auto-Close Fix
+function initMobileMenuClose() {
+    const offcanvasEl = document.getElementById('offcanvasNavbarLight');
+    if (!offcanvasEl) return;
+
+    const navLinks = offcanvasEl.querySelectorAll('.nav-link');
+    const offcanvasInstance = new bootstrap.Offcanvas(offcanvasEl); // Get or create instance
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasEl);
+            if (bsOffcanvas) {
+                bsOffcanvas.hide();
+            }
+        });
+    });
 }
