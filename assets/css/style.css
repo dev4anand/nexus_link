@@ -266,6 +266,18 @@ h6 {
     height: 100vh;
 }
 
+@media (max-width: 900px) {
+    .swiper {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .hero-slide {
+        height: auto;
+        min-height: 100vh;
+    }
+}
+
 .hero-slide {
     background-size: cover;
     background-position: center;
@@ -297,6 +309,15 @@ h6 {
 @media (max-width: 768px) {
     .hero-content-container {
         padding-top: 140px;
+        padding-bottom: 60px;
+        /* Add bottom padding for scrolling */
+    }
+
+    /* Fix for mobile content alignment */
+    .hero-overlay {
+        align-items: flex-start;
+        overflow-y: auto;
+        /* Allow scrolling within overlay if needed */
     }
 
     .hero-title {
@@ -684,6 +705,12 @@ h6 {
 }
 
 @media (max-width: 900px) {
+    .glass-header {
+        background: var(--bg-primary);
+        padding: 0.8rem 0;
+        box-shadow: var(--shadow-sm);
+    }
+
     .desktop-nav {
         display: none;
     }
