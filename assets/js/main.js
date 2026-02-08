@@ -83,6 +83,7 @@ function initScrollAnimations() {
 // Swiper Initialization
 function initSwiper() {
     if (typeof Swiper !== 'undefined') {
+        // Hero Swiper
         new Swiper(".mySwiper", {
             spaceBetween: 0,
             centeredSlides: true,
@@ -98,6 +99,26 @@ function initSwiper() {
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
+            },
+        });
+
+        // Projects Swiper (New)
+        new Swiper(".projectSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
             },
         });
     }

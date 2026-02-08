@@ -263,13 +263,11 @@ h6 {
 /* Swiper / Hero Style */
 .swiper {
     width: 100%;
-    height: 100vh;
 }
 
 @media (max-width: 900px) {
     .swiper {
         height: auto;
-        min-height: 100vh;
     }
 
     .hero-slide {
@@ -316,8 +314,7 @@ h6 {
     /* Fix for mobile content alignment */
     .hero-overlay {
         align-items: flex-start;
-        overflow-y: auto;
-        /* Allow scrolling within overlay if needed */
+        /* overflow-y: auto;  Removed to fix mobile scrolling */
     }
 
     .hero-title {
@@ -518,28 +515,25 @@ h6 {
 .about-img-placeholder {
     width: 100%;
     height: 400px;
-    background: linear-gradient(45deg, #1a1a2e, #16213e);
+
+    background-image: url("../../images/company_image.png");
+    background-size: cover;
+    /* fills the div */
+    background-position: center;
+    /* keeps image centered */
+    background-repeat: no-repeat;
+    /* no tiling */
+
     border-radius: var(--border-radius-lg);
     position: relative;
+
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-[data-theme="light"] .about-img-placeholder {
-    background: linear-gradient(45deg, #e0e0e0, #f8f9fa);
-}
 
-.about-img-placeholder::after {
-    content: 'NEXUS OFFICE';
-    color: rgba(255, 255, 255, 0.2);
-    font-size: 2rem;
-    font-weight: bold;
-}
 
-[data-theme="light"] .about-img-placeholder::after {
-    color: rgba(0, 0, 0, 0.1);
-}
 
 /* Projects Grid */
 .projects-grid {
@@ -597,7 +591,8 @@ h6 {
 }
 
 /* Carousel */
-.custom-carousel .carousel-item {
+.custom-carousel .carousel-item,
+.projectSwiper .swiper-slide {
     height: 500px;
 }
 
@@ -618,6 +613,7 @@ h6 {
     padding: 3rem;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
     color: white;
+    border-radius: var(--border-radius-lg);
 }
 
 /* Footer */
@@ -733,7 +729,8 @@ h6 {
     }
 
     .project-card,
-    .custom-carousel .carousel-item {
+    .custom-carousel .carousel-item,
+    .projectSwiper .swiper-slide {
         height: 400px;
         /* Taller on mobile for better touch */
     }
