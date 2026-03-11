@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Nexus Link Electromechanical LLC</title>
+  <meta name="description" content="Get in touch with Nexus Link Electromechanical LLC. Contact our engineering directors and estimation teams in Dubai, UAE. Phone: +971 4 280 2067.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/contact.css">
+</head>
+<body>
+<canvas id="bg-canvas"></canvas>
+<div class="page-wrapper">
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">NEXUS<span class="accent">LINK</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li><li><a href="sectors.html">Sectors</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="quality.html">Quality & HSE</a></li><li><a href="careers.html">Careers</a></li>
+        <li><a href="contact.html" class="nav-cta active">Contact Us</a></li>
+      </ul>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle theme"><span class="icon-sun">&#x2600;&#xFE0F;</span><span class="icon-moon">&#x1F319;</span></button>
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu">
+    <button class="mobile-menu-close" id="menu-close">✕</button>
+    <a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a>
+    <a href="sectors.html">Sectors</a><a href="projects.html">Projects</a><a href="quality.html">Quality & HSE</a>
+    <a href="careers.html">Careers</a><a href="contact.html">Contact Us</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="contact-hero">
+    <div class="container" style="padding-top:8rem;padding-bottom:4rem;position:relative;z-index:2;">
+      <nav aria-label="breadcrumb"><ol class="breadcrumb"><li><a href="index.html">Home</a></li><li>Contact Us</li></ol></nav>
+      <span class="eyebrow reveal">Get In Touch</span>
+      <h1 class="page-hero-title reveal reveal-delay-1">Let's Start <span class="grad">Your Project</span></h1>
+      <p class="page-hero-desc reveal reveal-delay-2">Ready to partner with an industry leader? Connect with our engineering directors and estimation teams to discuss your specific infrastructure requirements.</p>
+    </div>
+  </section>
+
+  <!-- ── Contact Section ── -->
+  <section class="section-pad" id="contact">
+    <div class="container">
+      <div class="contact-layout">
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <span class="eyebrow reveal">Reach Us</span>
+          <h2 class="section-title reveal reveal-delay-1">Contact <span class="grad">Information</span></h2>
+          <div class="divider reveal reveal-delay-2"></div>
+
+          <div class="contact-cards reveal reveal-delay-2">
+            <a href="tel:+97142802067" class="contact-card">
+              <div class="cc-icon">📞</div>
+              <div class="cc-info">
+                <span class="cc-label">Phone</span>
+                <span class="cc-value">+971 4 280 2067</span>
+              </div>
+            </a>
+            <a href="mailto:info@nexuslink.ae" class="contact-card">
+              <div class="cc-icon">✉️</div>
+              <div class="cc-info">
+                <span class="cc-label">Email</span>
+                <span class="cc-value">info@nexuslink.ae</span>
+              </div>
+            </a>
+            <div class="contact-card">
+              <div class="cc-icon">📍</div>
+              <div class="cc-info">
+                <span class="cc-label">Address</span>
+                <span class="cc-value">PO Box 554639, Dubai, UAE</span>
+              </div>
+            </div>
+            <a href="https://www.nexuslink.ae" class="contact-card" target="_blank">
+              <div class="cc-icon">🌐</div>
+              <div class="cc-info">
+                <span class="cc-label">Website</span>
+                <span class="cc-value">www.nexuslink.ae</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="hours-card reveal reveal-delay-3">
+            <h4>🕐 Working Hours</h4>
+            <div class="hours-row">
+              <span>Monday – Friday</span>
+              <span class="hours-time">8:00 AM – 6:00 PM</span>
+            </div>
+            <div class="hours-row">
+              <span>Saturday – Sunday</span>
+              <span class="hours-closed">Closed</span>
+            </div>
+            <p class="hours-note">For urgent project inquiries, please email us and we will respond promptly.</p>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrap reveal reveal-delay-1">
+          <h3>Send Us a Message</h3>
+          <p>Fill out the form below and our team will get back to you within 24 hours.</p>
+          <form class="contact-form" id="contact-form" onsubmit="handleSubmit(event)" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">First Name *</label>
+                <input type="text" id="fname" name="fname" placeholder="John" required>
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name *</label>
+                <input type="text" id="lname" name="lname" placeholder="Smith" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="john@company.com" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+971 XX XXX XXXX">
+            </div>
+            <div class="form-group">
+              <label for="company">Company / Project Name</label>
+              <input type="text" id="company" name="company" placeholder="Your company or project name">
+            </div>
+            <div class="form-group">
+              <label for="service">Service Interest</label>
+              <select id="service" name="service">
+                <option value="">Select a service...</option>
+                <option>Mechanical Systems (HVAC)</option>
+                <option>Electrical Systems</option>
+                <option>Plumbing & Fire Safety</option>
+                <option>Solar Energy & PV Systems</option>
+                <option>Data Center Infrastructure</option>
+                <option>Full MEP Package</option>
+                <option>Other / General Inquiry</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Project Details *</label>
+              <textarea id="message" name="message" rows="5" placeholder="Please describe your project requirements, scope, location, and timeline..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">
+              <span class="submit-text">Send Message</span>
+              <span class="submit-arrow">→</span>
+            </button>
+            <div class="form-success" id="form-success">
+              ✅ Thank you! Your message has been sent. We'll be in touch within 24 hours.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Map / Location ── -->
+  <section class="section-pad-sm location-section" id="location">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="eyebrow reveal">Our Location</span>
+        <h2 class="section-title reveal reveal-delay-1">Find <span class="grad">Us In Dubai</span></h2>
+      </div>
+      <div class="map-embed reveal reveal-delay-2">
+        <!-- UAE-themed location card instead of iframe -->
+        <div class="location-card">
+          <div class="lc-left">
+            <h3>Nexus Link Electromechanical LLC</h3>
+            <p>PO Box 554639<br>Dubai, United Arab Emirates</p>
+            <div class="lc-details">
+              <div class="lcd"><span>📞</span><a href="tel:+97142802067">+971 4 280 2067</a></div>
+              <div class="lcd"><span>✉️</span><a href="mailto:info@nexuslink.ae">info@nexuslink.ae</a></div>
+              <div class="lcd"><span>🌐</span><a href="https://www.nexuslink.ae" target="_blank">www.nexuslink.ae</a></div>
+            </div>
+            <a href="https://maps.google.com/?q=Dubai,UAE" target="_blank" class="btn btn-outline mt-3">Open in Google Maps →</a>
+          </div>
+          <div class="lc-map">
+            <div class="map-placeholder">
+              <div class="map-pin">
+                <div class="pin-dot"></div>
+                <div class="pin-ring"></div>
+              </div>
+              <span>Dubai, UAE</span>
+              <div class="uae-flag">🇦🇪</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">NEXUS<span class="accent">LINK</span></a>
+          <p class="mt-2">Leading MEP & Infrastructure contractors delivering engineering excellence across UAE since 2004.</p>
+        </div>
+        <div class="footer-col"><h5>Company</h5><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="quality.html">Quality & HSE</a></li><li><a href="careers.html">Careers</a></li></ul></div>
+        <div class="footer-col"><h5>Services</h5><ul><li><a href="services.html#mechanical">Mechanical</a></li><li><a href="services.html#electrical">Electrical</a></li><li><a href="services.html#plumbing">Plumbing & Fire</a></li><li><a href="services.html#solar">Solar Energy</a></li></ul></div>
+        <div class="footer-col"><h5>Contact</h5><ul><li><span>PO Box 554639, Dubai, UAE</span></li><li><a href="tel:+97142802067">+971 4 280 2067</a></li><li><a href="mailto:info@nexuslink.ae">info@nexuslink.ae</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Nexus Link Electromechanical L.L.C. All rights reserved.</p>
+        <p><a href="https://www.nexuslink.ae" target="_blank">www.nexuslink.ae</a></p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<button id="scroll-top" aria-label="Scroll to top">↑</button>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="assets/js/three-bg.js"></script>
+<script src="assets/js/nav.js"></script>
+<script>
+function handleSubmit(e) {
+  e.preventDefault();
+  const btn = document.querySelector('.form-submit');
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
+  setTimeout(() => {
+    btn.style.display = 'none';
+    document.getElementById('form-success').style.display = 'flex';
+  }, 1500);
+}
+</script>
+</body>
+</html>

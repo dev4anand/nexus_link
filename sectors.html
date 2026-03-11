@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sectors — Nexus Link Electromechanical LLC</title>
+  <meta name="description" content="Nexus Link serves 6+ key sectors: High-Rise & Commercial, Hospitality, Healthcare, Education, Industrial and Solar/Data Centers across the UAE.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/sectors.css">
+</head>
+<body>
+<canvas id="bg-canvas"></canvas>
+<div class="page-wrapper">
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">NEXUS<span class="accent">LINK</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li><li><a href="sectors.html" class="active">Sectors</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="quality.html">Quality & HSE</a></li><li><a href="careers.html">Careers</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+      </ul>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle theme"><span class="icon-sun">&#x2600;&#xFE0F;</span><span class="icon-moon">&#x1F319;</span></button>
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu">
+    <button class="mobile-menu-close" id="menu-close">✕</button>
+    <a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a>
+    <a href="sectors.html">Sectors</a><a href="projects.html">Projects</a><a href="quality.html">Quality & HSE</a>
+    <a href="careers.html">Careers</a><a href="contact.html">Contact Us</a>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="sectors-hero">
+    <div class="container" style="padding-top:8rem;padding-bottom:4rem;position:relative;z-index:2;">
+      <nav aria-label="breadcrumb"><ol class="breadcrumb"><li><a href="index.html">Home</a></li><li>Sectors</li></ol></nav>
+      <span class="eyebrow reveal">Industries We Serve</span>
+      <h1 class="page-hero-title reveal reveal-delay-1">Our <span class="grad">Sectors</span></h1>
+      <p class="page-hero-desc reveal reveal-delay-2">6+ key industries served with specialized MEP expertise tailored to each sector's unique requirements.</p>
+    </div>
+  </section>
+
+  <!-- ── High Rise & Commercial ── -->
+  <section class="section-pad sector-sec" id="highrise">
+    <div class="container">
+      <div class="sector-layout">
+        <div class="sector-img-col reveal">
+          <div class="sector-img-frame">
+            <img src="images/expertise/d3.png" alt="High Rise Buildings MEP" loading="lazy">
+          </div>
+        </div>
+        <div class="sector-text-col">
+          <span class="eyebrow reveal">Sector 01</span>
+          <h2 class="section-title reveal reveal-delay-1">High Rise & <span class="grad">Commercial</span></h2>
+          <div class="divider reveal reveal-delay-2"></div>
+          <p class="section-desc reveal reveal-delay-2">
+            Redefining majestic skylines through advanced structural engineering and meticulous vertical coordination. The UAE features some of the most highly condensed and aggressively scaled commercial zoning in the world.
+          </p>
+          <p class="section-desc mt-2 reveal reveal-delay-3">
+            Nexus Link is actively involved in the construction, retrofitting, and upgrading of iconic High-Rise complexes, expansive Office Towers, and Luxury Residential communities.
+          </p>
+          <div class="sector-features reveal reveal-delay-3">
+            <div class="sf-item"><span class="sf-icon">🏗️</span><span>High-pressure plumbing PRV stations for vertical zones</span></div>
+            <div class="sf-item"><span class="sf-icon">🛗</span><span>Synchronized complex elevator groupings</span></div>
+            <div class="sf-item"><span class="sf-icon">📊</span><span>Integrated Building Management Systems (BMS)</span></div>
+            <div class="sf-item"><span class="sf-icon">💡</span><span>Smart energy monitoring and remote asset control</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Hospitality & Healthcare ── -->
+  <section class="section-pad sector-sec alt-bg" id="hospitality">
+    <div class="container">
+      <div class="sector-layout reverse">
+        <div class="sector-img-col reveal">
+          <div class="sector-img-frame">
+            <img src="images/expertise/d5.png" alt="Hospitality MEP Services" loading="lazy">
+          </div>
+        </div>
+        <div class="sector-text-col">
+          <span class="eyebrow reveal">Sector 02 & 03</span>
+          <h2 class="section-title reveal reveal-delay-1">Hospitality & <span class="grad">Healthcare</span></h2>
+          <div class="divider reveal reveal-delay-2"></div>
+          <div class="sector-tabs reveal reveal-delay-2">
+            <button class="stab active" onclick="switchTab(this,'hosp')">🏨 Hospitality</button>
+            <button class="stab" onclick="switchTab(this,'health')">🏥 Healthcare</button>
+          </div>
+          <div class="stab-content" id="hosp">
+            <p class="section-desc mt-2">In the competitive five-star hospitality sector, guest comfort is entirely dependent on invisible efficiency. We provide advanced acoustic dampening to silence mechanical vibrations, create custom atmospheric climate zones for individualized room control, and execute visually hidden MEP installations that preserve pure architectural aesthetics.</p>
+            <div class="sector-features mt-3">
+              <div class="sf-item"><span class="sf-icon">🎵</span><span>Advanced acoustic dampening for mechanical vibrations</span></div>
+              <div class="sf-item"><span class="sf-icon">🌡️</span><span>Custom climate zones for individual room control</span></div>
+              <div class="sf-item"><span class="sf-icon">🏊</span><span>Temperature-controlled resort pool engineering</span></div>
+              <div class="sf-item"><span class="sf-icon">🍳</span><span>Complex commercial kitchen MEP integration</span></div>
+            </div>
+          </div>
+          <div class="stab-content hidden" id="health">
+            <p class="section-desc mt-2">Hospitals, clinics, and laboratories require exacting, highly regulated environments. Nexus Link executes these hyper-sensitive systems with immaculate perfection. In healthcare, MEP reliability is quite literally a matter of life and death.</p>
+            <div class="sector-features mt-3">
+              <div class="sf-item"><span class="sf-icon">🫁</span><span>Medical gas pipelines (oxygen, nitrous oxide, vacuum)</span></div>
+              <div class="sf-item"><span class="sf-icon">🚪</span><span>Negative pressure isolation rooms</span></div>
+              <div class="sf-item"><span class="sf-icon">🫧</span><span>Surgical-grade HEPA clean air for operating theaters</span></div>
+              <div class="sf-item"><span class="sf-icon">⚕️</span><span>100% regulatory compliance with DHA/MOH standards</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Education & Public ── -->
+  <section class="section-pad sector-sec" id="education">
+    <div class="container">
+      <div class="sector-layout">
+        <div class="sector-img-col reveal">
+          <div class="sector-img-frame">
+            <img src="images/expertise/d2.png" alt="Education & Public Sector MEP" loading="lazy">
+          </div>
+        </div>
+        <div class="sector-text-col">
+          <span class="eyebrow reveal">Sector 04</span>
+          <h2 class="section-title reveal reveal-delay-1">Education & <span class="grad">Public Sector</span></h2>
+          <div class="divider reveal reveal-delay-2"></div>
+          <p class="section-desc reveal reveal-delay-2">
+            Building robust environments specifically tailored for focus, safety, and vibrant community growth. From massive university campuses to primary school developments, Nexus Link provides fully integrated systems.
+          </p>
+          <div class="sector-features reveal reveal-delay-3">
+            <div class="sf-item"><span class="sf-icon">📢</span><span>Fully integrated public address systems for campus-wide communication</span></div>
+            <div class="sf-item"><span class="sf-icon">🌐</span><span>Robust high-bandwidth structured cabling for smart classrooms</span></div>
+            <div class="sf-item"><span class="sf-icon">🌬️</span><span>Large-scale HVAC introducing fresh outdoor air to prevent CO2 stagnation</span></div>
+            <div class="sf-item"><span class="sf-icon">🔒</span><span>Anti-scald plumbing and secure electrical distribution</span></div>
+            <div class="sf-item"><span class="sf-icon">🚨</span><span>Automated centralized evacuation controls with lighting and alarms</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Industrial & Logistics ── -->
+  <section class="section-pad sector-sec alt-bg" id="industrial">
+    <div class="container">
+      <div class="sector-layout reverse">
+        <div class="sector-img-col reveal">
+          <div class="sector-img-frame">
+            <img src="images/expertise/d6.png" alt="Industrial MEP Services" loading="lazy">
+          </div>
+        </div>
+        <div class="sector-text-col">
+          <span class="eyebrow reveal">Sector 05</span>
+          <h2 class="section-title reveal reveal-delay-1">Industrial & <span class="grad">Logistics</span></h2>
+          <div class="divider reveal reveal-delay-2"></div>
+          <p class="section-desc reveal reveal-delay-2">
+            Heavy-duty, resilient engineering optimized for vast manufacturing hubs and high-turnover logistical centers. Industrial manufacturing plants, massive automated warehouses, and port authorities need ruggedly dependable power grids.
+          </p>
+          <p class="section-desc mt-2 reveal reveal-delay-3">
+            Our comprehensive industrial solutions go far beyond standard commercial fit-outs, designed for 24/7 productivity with scale and durability as the primary concerns.
+          </p>
+          <div class="sector-features reveal reveal-delay-3">
+            <div class="sf-item"><span class="sf-icon">💡</span><span>High-bay technical lighting optimized for warehouse aisles</span></div>
+            <div class="sf-item"><span class="sf-icon">🔧</span><span>Pressurized compressed air lines for pneumatic machinery</span></div>
+            <div class="sf-item"><span class="sf-icon">❄️</span><span>Heavy equipment cooling circuits for manufacturing zones</span></div>
+            <div class="sf-item"><span class="sf-icon">🛡️</span><span>Reinforced galvanized steel cabling containments</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Solar & Data Centers ── -->
+  <section class="section-pad sector-sec" id="solar">
+    <div class="container">
+      <div class="sector-layout">
+        <div class="sector-img-col reveal">
+          <div class="sector-img-frame">
+            <img src="images/expertise/d4.png" alt="Solar PV & Data Centers" loading="lazy">
+          </div>
+        </div>
+        <div class="sector-text-col">
+          <span class="eyebrow reveal">Sector 06</span>
+          <h2 class="section-title reveal reveal-delay-1">Solar & <span class="grad">Data Centers</span></h2>
+          <div class="divider reveal reveal-delay-2"></div>
+          <p class="section-desc reveal reveal-delay-2">
+            Delivering sustainable power alternatives aligned with the UAE's green energy future, plus mission-critical data center infrastructure capable of zero-downtime operations.
+          </p>
+          <div class="sector-features reveal reveal-delay-3">
+            <div class="sf-item"><span class="sf-icon">☀️</span><span>Turnkey PV solar systems aligned with Shams Dubai</span></div>
+            <div class="sf-item"><span class="sf-icon">🔌</span><span>DEWA grid integration and smart meters</span></div>
+            <div class="sf-item"><span class="sf-icon">🖥️</span><span>Tier III/IV data center infrastructure engineering</span></div>
+            <div class="sf-item"><span class="sf-icon">🧊</span><span>CRAC precision cooling and hot/cold aisle containment</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner-simple">
+    <div class="container text-center">
+      <h2 class="section-title reveal">Your Sector, <span class="grad">Our Expertise</span></h2>
+      <p class="section-desc mx-auto mt-2 reveal reveal-delay-1">Whatever the industry, Nexus Link has the specialized knowledge and experience to deliver.</p>
+      <div class="flex items-center flex-wrap gap-2 mt-4 reveal reveal-delay-2" style="justify-content:center;">
+        <a href="contact.html" class="btn btn-primary">Start Your Project</a>
+        <a href="services.html" class="btn btn-outline">Our Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">NEXUS<span class="accent">LINK</span></a>
+          <p class="mt-2">Leading MEP & Infrastructure contractors delivering engineering excellence across UAE since 2004.</p>
+        </div>
+        <div class="footer-col"><h5>Company</h5><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="quality.html">Quality & HSE</a></li><li><a href="careers.html">Careers</a></li></ul></div>
+        <div class="footer-col"><h5>Services</h5><ul><li><a href="services.html#mechanical">Mechanical</a></li><li><a href="services.html#electrical">Electrical</a></li><li><a href="services.html#plumbing">Plumbing & Fire</a></li><li><a href="services.html#solar">Solar Energy</a></li></ul></div>
+        <div class="footer-col"><h5>Contact</h5><ul><li><span>PO Box 554639, Dubai, UAE</span></li><li><a href="tel:+97142802067">+971 4 280 2067</a></li><li><a href="mailto:info@nexuslink.ae">info@nexuslink.ae</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Nexus Link Electromechanical L.L.C. All rights reserved.</p>
+        <p><a href="https://www.nexuslink.ae" target="_blank">www.nexuslink.ae</a></p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<button id="scroll-top" aria-label="Scroll to top">↑</button>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="assets/js/three-bg.js"></script>
+<script src="assets/js/nav.js"></script>
+<script>
+function switchTab(btn, id) {
+  document.querySelectorAll('.stab').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.stab-content').forEach(c => c.classList.add('hidden'));
+  btn.classList.add('active');
+  document.getElementById(id).classList.remove('hidden');
+}
+</script>
+</body>
+</html>

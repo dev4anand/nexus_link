@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quality & HSE — Nexus Link Electromechanical LLC</title>
+  <meta name="description" content="Nexus Link's uncompromising quality assurance, QA/QC framework, and zero-harm Health, Safety & Environment (HSE) policies ensure every project meets the highest international standards.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/quality.css">
+</head>
+<body>
+<canvas id="bg-canvas"></canvas>
+<div class="page-wrapper">
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">NEXUS<span class="accent">LINK</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li><li><a href="sectors.html">Sectors</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="quality.html" class="active">Quality & HSE</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+      </ul>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle theme"><span class="icon-sun">&#x2600;&#xFE0F;</span><span class="icon-moon">&#x1F319;</span></button>
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu">
+    <button class="mobile-menu-close" id="menu-close">✕</button>
+    <a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a>
+    <a href="sectors.html">Sectors</a><a href="projects.html">Projects</a><a href="quality.html">Quality & HSE</a>
+    <a href="careers.html">Careers</a><a href="contact.html">Contact Us</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="quality-hero">
+    <div class="container" style="padding-top:8rem;padding-bottom:4rem;position:relative;z-index:2;">
+      <nav aria-label="breadcrumb"><ol class="breadcrumb"><li><a href="index.html">Home</a></li><li>Quality & HSE</li></ol></nav>
+      <span class="eyebrow reveal">Standards & Safety</span>
+      <h1 class="page-hero-title reveal reveal-delay-1">Quality & <span class="grad">HSE Commitment</span></h1>
+      <p class="page-hero-desc reveal reveal-delay-2">Absolute quality execution and zero compromise on safety — the twin pillars of every Nexus Link engagement.</p>
+    </div>
+  </section>
+
+  <!-- ── Quality Policy ── -->
+  <section class="section-pad" id="quality">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="eyebrow reveal">Our QA/QC Framework</span>
+        <h2 class="section-title reveal reveal-delay-1">Absolute Quality <span class="grad">Execution</span></h2>
+        <p class="section-desc mx-auto mt-2 reveal reveal-delay-2">Quality is not an afterthought; it is intricately interwoven into every single stage of a Nexus Link deployment.</p>
+      </div>
+
+      <div class="quality-grid mt-4">
+        <div class="quality-card qc-primary reveal">
+          <div class="qc-accent-bar"></div>
+          <div class="qc-icon">🔍</div>
+          <h3>Strict Material Inspections</h3>
+          <p>Conducted prior to any material entering the site to confirm structural integrity and manufacturer compliance with approved submittals. We verify every component against engineering specifications before installation begins.</p>
+          <ul class="qc-list">
+            <li>Supplier qualification and vendor audits</li>
+            <li>Documentation review and material certificates</li>
+            <li>Physical measurement and quality verification</li>
+          </ul>
+        </div>
+        <div class="quality-card reveal reveal-delay-1">
+          <div class="qc-accent-bar"></div>
+          <div class="qc-icon">🏗️</div>
+          <h3>Thorough Installation Inspections</h3>
+          <p>Conducted dynamically at various modular stages — first-fix, second-fix, and final-fix — to guarantee workmanship aligns identically with the approved shop drawings.</p>
+          <ul class="qc-list">
+            <li>Stage-by-stage inspection checkpoints</li>
+            <li>Cross-referencing against approved shop drawings</li>
+            <li>Defect identification and immediate correction</li>
+          </ul>
+        </div>
+        <div class="quality-card reveal reveal-delay-2">
+          <div class="qc-accent-bar"></div>
+          <div class="qc-icon">📊</div>
+          <h3>Elaborate Progress Documentation</h3>
+          <p>Utilizing digital snagging tools to ensure complete transparency with clients and stakeholders regarding project milestones and quality compliance at every stage.</p>
+          <ul class="qc-list">
+            <li>Real-time digital snagging and defect tracking</li>
+            <li>Milestone reporting with photographic evidence</li>
+            <li>Complete audit trail from start to handover</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Testing & Commissioning ── -->
+  <section class="section-pad alt-bg" id="testing">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="eyebrow reveal">Final Phase</span>
+        <h2 class="section-title reveal reveal-delay-1">Testing & <span class="grad">Commissioning</span></h2>
+      </div>
+      <div class="tc-grid mt-4">
+        <div class="tc-card reveal">
+          <div class="tc-num">FAT</div>
+          <h3>Factory Acceptance Tests</h3>
+          <p>Exhaustive performance verification of all manufactured and pre-assembled components in a controlled factory environment before they are shipped to site, ensuring zero defects arrive on the project.</p>
+        </div>
+        <div class="tc-card reveal reveal-delay-1">
+          <div class="tc-num">SAT</div>
+          <h3>Site Acceptance Tests</h3>
+          <p>Comprehensive system performance verification conducted on-site after full installation with real operating conditions, load testing, and integrated system simulation to validate all requirements.</p>
+        </div>
+        <div class="tc-card reveal reveal-delay-2">
+          <div class="tc-num">H/O</div>
+          <h3>Handover Package</h3>
+          <p>We deliver comprehensive As-Built Drawings, full system operational training for client staff, and detailed Operations & Maintenance (O&M) Manuals for all installed systems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── HSE Policy ── -->
+  <section class="section-pad" id="hse">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="eyebrow reveal">Health, Safety & Environment</span>
+        <h2 class="section-title reveal reveal-delay-1">Zero-Harm <span class="grad">HSE Culture</span></h2>
+        <p class="section-desc mx-auto mt-2 reveal reveal-delay-2">At Nexus Link, safety is quite literally our license to operate. We believe every worker must return home safely every day.</p>
+      </div>
+
+      <div class="hse-layout mt-4">
+        <div class="hse-big-card reveal">
+          <h3>🦺 Workforce Safety</h3>
+          <p>We rigorously document daily site safety records, toolbox talks, and hazard identifiers. We deploy persistent, highly trained safety officers to patrol active zones and enforce non-negotiable personal protective equipment (PPE) mandates and safe-scaffolding tags.</p>
+          <div class="hse-checkpoints">
+            <span>✓ Daily toolbox talks</span>
+            <span>✓ PPE mandate enforcement</span>
+            <span>✓ Safety officer patrols</span>
+            <span>✓ Incident-free culture</span>
+            <span>✓ Workers' safety cards</span>
+            <span>✓ Safe scaffolding tags</span>
+          </div>
+        </div>
+        <div class="hse-big-card reveal reveal-delay-1">
+          <h3>🌱 Environmental Responsibility</h3>
+          <p>Environmentally, we actively track and mitigate noise pollution, chemical spills, and dust generation to ensure the wellness of the surrounding communities and full compliance with municipal environmental regulations.</p>
+          <div class="hse-checkpoints">
+            <span>✓ Noise pollution monitoring</span>
+            <span>✓ Chemical spill prevention</span>
+            <span>✓ Dust suppression measures</span>
+            <span>✓ Waste management plans</span>
+            <span>✓ Community wellness</span>
+            <span>✓ Municipal compliance</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- HSE Stats -->
+      <div class="hse-stats mt-4">
+        <div class="hse-stat reveal">
+          <span class="hse-stat-label">Zero-Harm</span>
+          <span class="hse-stat-val">Policy</span>
+        </div>
+        <div class="hse-stat reveal reveal-delay-1">
+          <span class="hse-stat-label">Daily</span>
+          <span class="hse-stat-val">Site Safety Records</span>
+        </div>
+        <div class="hse-stat reveal reveal-delay-2">
+          <span class="hse-stat-label">100%</span>
+          <span class="hse-stat-val">PPE Compliance</span>
+        </div>
+        <div class="hse-stat reveal reveal-delay-3">
+          <span class="hse-stat-label">NFPA</span>
+          <span class="hse-stat-val">Standards Certified</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner-simple">
+    <div class="container text-center">
+      <h2 class="section-title reveal">Quality You Can <span class="grad">Trust</span></h2>
+      <p class="section-desc mx-auto mt-2 reveal reveal-delay-1">Experience the Nexus Link difference — where quality and safety are never compromised.</p>
+      <div class="flex items-center flex-wrap gap-2 mt-4 reveal reveal-delay-2" style="justify-content:center;">
+        <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+        <a href="about.html" class="btn btn-outline">Learn About Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">NEXUS<span class="accent">LINK</span></a>
+          <p class="mt-2">Leading MEP & Infrastructure contractors delivering engineering excellence across UAE since 2004.</p>
+        </div>
+        <div class="footer-col"><h5>Company</h5><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="quality.html">Quality & HSE</a></li><li><a href="careers.html">Careers</a></li></ul></div>
+        <div class="footer-col"><h5>Services</h5><ul><li><a href="services.html#mechanical">Mechanical</a></li><li><a href="services.html#electrical">Electrical</a></li><li><a href="services.html#plumbing">Plumbing & Fire</a></li><li><a href="services.html#solar">Solar Energy</a></li></ul></div>
+        <div class="footer-col"><h5>Contact</h5><ul><li><span>PO Box 554639, Dubai, UAE</span></li><li><a href="tel:+97142802067">+971 4 280 2067</a></li><li><a href="mailto:info@nexuslink.ae">info@nexuslink.ae</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Nexus Link Electromechanical L.L.C. All rights reserved.</p>
+        <p><a href="https://www.nexuslink.ae" target="_blank">www.nexuslink.ae</a></p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<button id="scroll-top" aria-label="Scroll to top">↑</button>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="assets/js/three-bg.js"></script>
+<script src="assets/js/nav.js"></script>
+</body>
+</html>
