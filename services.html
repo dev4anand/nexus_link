@@ -1,287 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Services — Nexus Link Electromechanical LLC | MEP Services UAE</title>
-  <meta name="description" content="Nexus Link offers complete MEP services: Mechanical (HVAC), Electrical (HV/MV/LV), Plumbing & Fire Safety, Solar Energy, and Mission-Critical Data Center infrastructure across UAE.">
+  <meta name="description"
+    content="Nexus Link offers complete MEP services: Mechanical (HVAC), Electrical (HV/MV/LV), Plumbing & Fire Safety, Solar Energy, and Mission-Critical Data Center infrastructure across UAE.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300...900&family=Plus+Jakarta+Sans:ital,wght@0,300...800;1,400&display=swap" rel="stylesheet">
-    <!-- Bootstrap 5 CSS -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300...900&family=Plus+Jakarta+Sans:ital,wght@0,300...800;1,400&display=swap"
+    rel="stylesheet">
+  <!-- Bootstrap 5 CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="assets/css/global.css">
-  <link rel="stylesheet" href="assets/css/services.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
 </head>
-<body>
-<canvas id="bg-canvas"></canvas>
-<div class="page-wrapper">
 
-  <nav class="navbar" id="navbar">
-    <div class="nav-container">
-      <a href="index.html" class="nav-logo">NEXUS<span class="accent">LINK</span></a>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html" class="active">Services</a></li>
-        <li><a href="sectors.html">Sectors</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="quality.html">Quality & HSE</a></li>
-        <li><a href="careers.html">Careers</a></li>
-        <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
-      </ul>
-        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle theme"><i class="bi bi-sun-fill icon-sun"></i><i class="bi bi-moon-fill icon-moon"></i></button>
-      <button class="nav-hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+<body>
+  <canvas id="bg-canvas"></canvas>
+  <div class="page-wrapper">
+
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="nav-logo">NEXUS<span class="accent">LINK</span></a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="sectors.html">Sectors</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="quality.html">Quality & HSE</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+        </ul>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle theme"><i
+            class="bi bi-sun-fill icon-sun"></i><i class="bi bi-moon-fill icon-moon"></i></button>
+        <button class="nav-hamburger" id="hamburger"
+          aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+    <div class="mobile-menu" id="mobile-menu">
+      <button class="mobile-menu-close" id="menu-close">✕</button>
+      <a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a>
+      <a href="sectors.html">Sectors</a><a href="projects.html">Projects</a><a href="quality.html">Quality & HSE</a>
+      <a href="careers.html">Careers</a><a href="contact.html">Contact Us</a>
     </div>
-  </nav>
-  <div class="mobile-menu" id="mobile-menu">
-    <button class="mobile-menu-close" id="menu-close">✕</button>
-    <a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a>
-    <a href="sectors.html">Sectors</a><a href="projects.html">Projects</a><a href="quality.html">Quality & HSE</a>
-    <a href="careers.html">Careers</a><a href="contact.html">Contact Us</a>
+
+    <!-- Page Hero -->
+    <section class="services-page-hero">
+      <div class="hero-overlay"></div>
+      <div class="container" style="padding-top:8rem;padding-bottom:4rem;position:relative;z-index:2;">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li>Services</li>
+          </ol>
+        </nav>
+        <span class="eyebrow reveal">What We Do</span>
+        <h1 class="page-hero-title reveal reveal-delay-1">Our <span class="grad">MEP Services</span></h1>
+        <p class="page-hero-desc reveal reveal-delay-2">Comprehensive, integrated engineering solutions from design to
+          commissioning.</p>
+        <!-- Service Navigation Pills -->
+        <div class="service-pills reveal reveal-delay-3">
+          <a href="#mechanical" class="pill active">⚙️ Mechanical</a>
+          <a href="#electrical" class="pill">⚡ Electrical</a>
+          <a href="#plumbing" class="pill">💧 Plumbing & Fire</a>
+          <a href="#solar" class="pill">☀️ Solar & Data Centers</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Mechanical Systems ── -->
+    <section class="section-pad service-section" id="mechanical">
+      <div class="container">
+        <div class="service-header">
+          <div class="service-badge mech">M</div>
+          <div>
+            <span class="eyebrow reveal">Mechanical</span>
+            <h2 class="section-title reveal reveal-delay-1">Mechanical <span class="grad">Systems</span></h2>
+          </div>
+        </div>
+
+        <div class="service-intro reveal reveal-delay-2">
+          <p>Nexus Link provides complete, end-to-end mechanical system deployment strictly tailored for high-demand,
+            complex environments.</p>
+        </div>
+
+        <div class="service-two-col">
+          <div class="service-detail-card reveal">
+            <div class="sdc-icon">❄️</div>
+            <h3>Heating, Ventilation & Air Conditioning (HVAC)</h3>
+            <p>Ventilation and heating services are critical to user comfort, productivity, and health in any
+              commercial, industrial, or residential development. By partnering with Nexus Link, clients secure complete
+              peace of mind knowing that their HVAC configurations are running smoothly, safely, and with maximal energy
+              efficiency.</p>
+            <ul class="service-bullets">
+              <li>Intricate chiller plants and VAV systems</li>
+              <li>High-efficiency particulate air (HEPA) filtration units</li>
+              <li>Smart thermostat and BMS integration</li>
+              <li>Engineered for extreme Middle East ambient temperatures</li>
+              <li>Energy-optimized designs to reduce operational costs</li>
+            </ul>
+          </div>
+          <div class="service-detail-card reveal reveal-delay-1">
+            <div class="sdc-icon">🔩</div>
+            <h3>Industrial Cooling & Vertical Transportation</h3>
+            <p>Our technical teams flawlessly integrate heavy-duty chillers, district cooling networks, and
+              sophisticated elevator/escalator systems. We understand that vertical transportation is the vital
+              circulatory system of any high-rise.</p>
+            <ul class="service-bullets">
+              <li>Heavy-duty district cooling network integration</li>
+              <li>High-capacity industrial chiller installation</li>
+              <li>Elevator & escalator system commissioning</li>
+              <li>Peak-hour traffic optimization design</li>
+              <li>Minimal maintenance downtime engineering</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Electrical Systems ── -->
+    <section class="section-pad service-section alt-bg" id="electrical">
+      <div class="container">
+        <div class="service-header">
+          <div class="service-badge elec">E</div>
+          <div>
+            <span class="eyebrow reveal">Electrical</span>
+            <h2 class="section-title reveal reveal-delay-1">Electrical <span class="grad">Systems</span></h2>
+          </div>
+        </div>
+
+        <div class="service-intro reveal reveal-delay-2">
+          <p>Powering the infrastructure of tomorrow with uncompromised operational redundancy and stringent safety
+            standards.</p>
+        </div>
+
+        <div class="service-two-col">
+          <div class="service-detail-card reveal">
+            <div class="sdc-icon">🔋</div>
+            <h3>High, Medium & Low Voltage Distribution</h3>
+            <p>Electricity is the lifeblood of modern facilities. We engineer, supply, and install comprehensive
+              end-to-end power distribution networks. From coordinating main high-voltage substations and transformers
+              to configuring localized low-voltage consumer panels, we ensure absolute stability.</p>
+            <ul class="service-bullets">
+              <li>Main HV substation and transformer coordination</li>
+              <li>Uninterruptible Power Supplies (UPS) systems</li>
+              <li>Heavy-duty diesel generator backup systems</li>
+              <li>Automatic Transfer Switches (ATS)</li>
+              <li>Mission-critical redundancy design</li>
+            </ul>
+          </div>
+          <div class="service-detail-card reveal reveal-delay-1">
+            <div class="sdc-icon">🤖</div>
+            <h3>Intelligent Automation & Specialized Lighting</h3>
+            <p>Nexus Link deploys intelligent industrial automation and smart lighting control systems that adapt to
+              occupancy and natural daylight. Our electrical engineers execute stringent setups for fundamental life
+              safety.</p>
+            <ul class="service-bullets">
+              <li>Occupancy-adaptive smart lighting systems</li>
+              <li>Addressable fire alarms and smoke control panels</li>
+              <li>Public address systems for emergency evacuation</li>
+              <li>Centralized CCTV and Access Control networks</li>
+              <li>Building Management System (BMS) integration</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Plumbing & Fire Safety ── -->
+    <section class="section-pad service-section" id="plumbing">
+      <div class="container">
+        <div class="service-header">
+          <div class="service-badge plumb">P</div>
+          <div>
+            <span class="eyebrow reveal">Plumbing & Fire Safety</span>
+            <h2 class="section-title reveal reveal-delay-1">Plumbing & <span class="grad">Fire Safety</span></h2>
+          </div>
+        </div>
+
+        <div class="service-intro reveal reveal-delay-2">
+          <p>Nexus Link ensures vital fluid logistics run uninterrupted, securing properties against risks while
+            maintaining pristine hygiene.</p>
+        </div>
+
+        <div class="service-two-col">
+          <div class="service-detail-card reveal">
+            <div class="sdc-icon">🚰</div>
+            <h3>Comprehensive Plumbing & Public Health Engineering</h3>
+            <p>Whether the requirement dictates massive storm water management grids, sanitary sewage disposal networks,
+              bulk domestic water supply, or extensive agricultural irrigation systems, we provide highly robust
+              plumbing architectures.</p>
+            <ul class="service-bullets">
+              <li>Storm water and sanitary sewage management</li>
+              <li>Advanced hydraulic pressure distribution calculations</li>
+              <li>PEX, PPR, and high-grade copper piping systems</li>
+              <li>Domestic water supply for all building scales</li>
+              <li>Agricultural and landscape irrigation engineering</li>
+            </ul>
+          </div>
+          <div class="service-detail-card reveal reveal-delay-1">
+            <div class="sdc-icon">🔥</div>
+            <h3>Fire Detection & Life Protection Systems</h3>
+            <p>Life safety is paramount. We engineer advanced fire suppression environments with integrated systems to
+              NFPA standards and UAE Civil Defence regulations.</p>
+            <ul class="service-bullets">
+              <li>Wet-pipe and dry-pipe sprinkler network integration</li>
+              <li>FM200 and Novec gas-based extinguishing systems</li>
+              <li>Fire pump, hose reel, and hydrant commissioning</li>
+              <li>NFPA-compliant design and installation</li>
+              <li>UAE Civil Defence regulation adherence</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Solar & Data Centers ── -->
+    <section class="section-pad service-section alt-bg" id="solar">
+      <div class="container">
+        <div class="service-header">
+          <div class="service-badge solar">S</div>
+          <div>
+            <span class="eyebrow reveal">Solar & Specialized</span>
+            <h2 class="section-title reveal reveal-delay-1">Solar Energy & <span class="grad">Data Centers</span></h2>
+          </div>
+        </div>
+
+        <div class="service-intro reveal reveal-delay-2">
+          <p>Delivering sustainable power alternatives and highly specialized, mission-critical infrastructure
+            architectures.</p>
+        </div>
+
+        <div class="service-two-col">
+          <div class="service-detail-card reveal">
+            <div class="sdc-icon">☀️</div>
+            <h3>Solar Energy PV Systems & Renewables</h3>
+            <p>As the UAE transitions toward sustainable energy, Nexus Link offers turnkey grid-connected Photovoltaic
+              (PV) systems completely aligned with green initiatives like Shams Dubai.</p>
+            <ul class="service-bullets">
+              <li>Solar irradiance assessments and feasibility studies</li>
+              <li>Structural roof capacity checks and design</li>
+              <li>Panel installation and metering</li>
+              <li>DEWA grid integration and compliance</li>
+              <li>Carbon footprint reduction and long-term energy savings</li>
+            </ul>
+          </div>
+          <div class="service-detail-card reveal reveal-delay-1">
+            <div class="sdc-icon">🖥️</div>
+            <h3>Mission-Critical Data Center Infrastructure</h3>
+            <p>Nexus Link is uniquely positioned to handle the extreme cooling algorithms and uninterruptible power
+              requirements of high-density Data Centers — Tier III and Tier IV standards.</p>
+            <ul class="service-bullets">
+              <li>Precision Computer Room Air Conditioning (CRAC) units</li>
+              <li>Raised-floor cooling and hot/cold aisle containment</li>
+              <li>Tier III and Tier IV power infrastructure design</li>
+              <li>Fault-tolerant, concurrently maintainable backbones</li>
+              <li>Zero-downtime critical IT operation guarantee</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner-simple">
+      <div class="container text-center">
+        <h2 class="section-title reveal">Discuss Your <span class="grad">Project Requirements</span></h2>
+        <p class="section-desc mx-auto mt-2 reveal reveal-delay-1">Our engineering and estimation teams are ready to
+          provide a comprehensive consultation.</p>
+        <div class="flex items-center flex-wrap gap-2 mt-4 reveal reveal-delay-2" style="justify-content:center;">
+          <a href="contact.html" class="btn btn-primary">Request a Consultation</a>
+          <a href="projects.html" class="btn btn-outline">View Our Portfolio</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="index.html" class="nav-logo">NEXUS<span class="accent">LINK</span></a>
+            <p class="mt-2">Leading MEP & Infrastructure contractors delivering engineering excellence across UAE since
+              2004.</p>
+          </div>
+          <div class="footer-col">
+            <h5>Company</h5>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="quality.html">Quality & HSE</a></li>
+              <li><a href="careers.html">Careers</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Services</h5>
+            <ul>
+              <li><a href="#mechanical">Mechanical</a></li>
+              <li><a href="#electrical">Electrical</a></li>
+              <li><a href="#plumbing">Plumbing & Fire</a></li>
+              <li><a href="#solar">Solar Energy</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Contact</h5>
+            <ul>
+              <li><span>PO Box 554639, Dubai, UAE</span></li>
+              <li><a href="tel:+97142802067">+971 4 280 2067</a></li>
+              <li><a href="mailto:info@nexuslink.ae">info@nexuslink.ae</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 Nexus Link Electromechanical L.L.C. All rights reserved.</p>
+          <p><a href="https://www.nexuslink.ae" target="_blank">www.nexuslink.ae</a></p>
+        </div>
+      </div>
+    </footer>
   </div>
 
-  <!-- Page Hero -->
-  <section class="services-page-hero">
-    <div class="container" style="padding-top:8rem;padding-bottom:4rem;position:relative;z-index:2;">
-      <nav aria-label="breadcrumb"><ol class="breadcrumb"><li><a href="index.html">Home</a></li><li>Services</li></ol></nav>
-      <span class="eyebrow reveal">What We Do</span>
-      <h1 class="page-hero-title reveal reveal-delay-1">Our <span class="grad">MEP Services</span></h1>
-      <p class="page-hero-desc reveal reveal-delay-2">Comprehensive, integrated engineering solutions from design to commissioning.</p>
-      <!-- Service Navigation Pills -->
-      <div class="service-pills reveal reveal-delay-3">
-        <a href="#mechanical" class="pill active">⚙️ Mechanical</a>
-        <a href="#electrical" class="pill">⚡ Electrical</a>
-        <a href="#plumbing" class="pill">💧 Plumbing & Fire</a>
-        <a href="#solar" class="pill">☀️ Solar & Data Centers</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── Mechanical Systems ── -->
-  <section class="section-pad service-section" id="mechanical">
-    <div class="container">
-      <div class="service-header">
-        <div class="service-badge mech">M</div>
-        <div>
-          <span class="eyebrow reveal">Mechanical</span>
-          <h2 class="section-title reveal reveal-delay-1">Mechanical <span class="grad">Systems</span></h2>
-        </div>
-      </div>
-
-      <div class="service-intro reveal reveal-delay-2">
-        <p>Nexus Link provides complete, end-to-end mechanical system deployment strictly tailored for high-demand, complex environments.</p>
-      </div>
-
-      <div class="service-two-col">
-        <div class="service-detail-card reveal">
-          <div class="sdc-icon">❄️</div>
-          <h3>Heating, Ventilation & Air Conditioning (HVAC)</h3>
-          <p>Ventilation and heating services are critical to user comfort, productivity, and health in any commercial, industrial, or residential development. By partnering with Nexus Link, clients secure complete peace of mind knowing that their HVAC configurations are running smoothly, safely, and with maximal energy efficiency.</p>
-          <ul class="service-bullets">
-            <li>Intricate chiller plants and VAV systems</li>
-            <li>High-efficiency particulate air (HEPA) filtration units</li>
-            <li>Smart thermostat and BMS integration</li>
-            <li>Engineered for extreme Middle East ambient temperatures</li>
-            <li>Energy-optimized designs to reduce operational costs</li>
-          </ul>
-        </div>
-        <div class="service-detail-card reveal reveal-delay-1">
-          <div class="sdc-icon">🔩</div>
-          <h3>Industrial Cooling & Vertical Transportation</h3>
-          <p>Our technical teams flawlessly integrate heavy-duty chillers, district cooling networks, and sophisticated elevator/escalator systems. We understand that vertical transportation is the vital circulatory system of any high-rise.</p>
-          <ul class="service-bullets">
-            <li>Heavy-duty district cooling network integration</li>
-            <li>High-capacity industrial chiller installation</li>
-            <li>Elevator & escalator system commissioning</li>
-            <li>Peak-hour traffic optimization design</li>
-            <li>Minimal maintenance downtime engineering</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── Electrical Systems ── -->
-  <section class="section-pad service-section alt-bg" id="electrical">
-    <div class="container">
-      <div class="service-header">
-        <div class="service-badge elec">E</div>
-        <div>
-          <span class="eyebrow reveal">Electrical</span>
-          <h2 class="section-title reveal reveal-delay-1">Electrical <span class="grad">Systems</span></h2>
-        </div>
-      </div>
-
-      <div class="service-intro reveal reveal-delay-2">
-        <p>Powering the infrastructure of tomorrow with uncompromised operational redundancy and stringent safety standards.</p>
-      </div>
-
-      <div class="service-two-col">
-        <div class="service-detail-card reveal">
-          <div class="sdc-icon">🔋</div>
-          <h3>High, Medium & Low Voltage Distribution</h3>
-          <p>Electricity is the lifeblood of modern facilities. We engineer, supply, and install comprehensive end-to-end power distribution networks. From coordinating main high-voltage substations and transformers to configuring localized low-voltage consumer panels, we ensure absolute stability.</p>
-          <ul class="service-bullets">
-            <li>Main HV substation and transformer coordination</li>
-            <li>Uninterruptible Power Supplies (UPS) systems</li>
-            <li>Heavy-duty diesel generator backup systems</li>
-            <li>Automatic Transfer Switches (ATS)</li>
-            <li>Mission-critical redundancy design</li>
-          </ul>
-        </div>
-        <div class="service-detail-card reveal reveal-delay-1">
-          <div class="sdc-icon">🤖</div>
-          <h3>Intelligent Automation & Specialized Lighting</h3>
-          <p>Nexus Link deploys intelligent industrial automation and smart lighting control systems that adapt to occupancy and natural daylight. Our electrical engineers execute stringent setups for fundamental life safety.</p>
-          <ul class="service-bullets">
-            <li>Occupancy-adaptive smart lighting systems</li>
-            <li>Addressable fire alarms and smoke control panels</li>
-            <li>Public address systems for emergency evacuation</li>
-            <li>Centralized CCTV and Access Control networks</li>
-            <li>Building Management System (BMS) integration</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── Plumbing & Fire Safety ── -->
-  <section class="section-pad service-section" id="plumbing">
-    <div class="container">
-      <div class="service-header">
-        <div class="service-badge plumb">P</div>
-        <div>
-          <span class="eyebrow reveal">Plumbing & Fire Safety</span>
-          <h2 class="section-title reveal reveal-delay-1">Plumbing & <span class="grad">Fire Safety</span></h2>
-        </div>
-      </div>
-
-      <div class="service-intro reveal reveal-delay-2">
-        <p>Nexus Link ensures vital fluid logistics run uninterrupted, securing properties against risks while maintaining pristine hygiene.</p>
-      </div>
-
-      <div class="service-two-col">
-        <div class="service-detail-card reveal">
-          <div class="sdc-icon">🚰</div>
-          <h3>Comprehensive Plumbing & Public Health Engineering</h3>
-          <p>Whether the requirement dictates massive storm water management grids, sanitary sewage disposal networks, bulk domestic water supply, or extensive agricultural irrigation systems, we provide highly robust plumbing architectures.</p>
-          <ul class="service-bullets">
-            <li>Storm water and sanitary sewage management</li>
-            <li>Advanced hydraulic pressure distribution calculations</li>
-            <li>PEX, PPR, and high-grade copper piping systems</li>
-            <li>Domestic water supply for all building scales</li>
-            <li>Agricultural and landscape irrigation engineering</li>
-          </ul>
-        </div>
-        <div class="service-detail-card reveal reveal-delay-1">
-          <div class="sdc-icon">🔥</div>
-          <h3>Fire Detection & Life Protection Systems</h3>
-          <p>Life safety is paramount. We engineer advanced fire suppression environments with integrated systems to NFPA standards and UAE Civil Defence regulations.</p>
-          <ul class="service-bullets">
-            <li>Wet-pipe and dry-pipe sprinkler network integration</li>
-            <li>FM200 and Novec gas-based extinguishing systems</li>
-            <li>Fire pump, hose reel, and hydrant commissioning</li>
-            <li>NFPA-compliant design and installation</li>
-            <li>UAE Civil Defence regulation adherence</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── Solar & Data Centers ── -->
-  <section class="section-pad service-section alt-bg" id="solar">
-    <div class="container">
-      <div class="service-header">
-        <div class="service-badge solar">S</div>
-        <div>
-          <span class="eyebrow reveal">Solar & Specialized</span>
-          <h2 class="section-title reveal reveal-delay-1">Solar Energy & <span class="grad">Data Centers</span></h2>
-        </div>
-      </div>
-
-      <div class="service-intro reveal reveal-delay-2">
-        <p>Delivering sustainable power alternatives and highly specialized, mission-critical infrastructure architectures.</p>
-      </div>
-
-      <div class="service-two-col">
-        <div class="service-detail-card reveal">
-          <div class="sdc-icon">☀️</div>
-          <h3>Solar Energy PV Systems & Renewables</h3>
-          <p>As the UAE transitions toward sustainable energy, Nexus Link offers turnkey grid-connected Photovoltaic (PV) systems completely aligned with green initiatives like Shams Dubai.</p>
-          <ul class="service-bullets">
-            <li>Solar irradiance assessments and feasibility studies</li>
-            <li>Structural roof capacity checks and design</li>
-            <li>Panel installation and metering</li>
-            <li>DEWA grid integration and compliance</li>
-            <li>Carbon footprint reduction and long-term energy savings</li>
-          </ul>
-        </div>
-        <div class="service-detail-card reveal reveal-delay-1">
-          <div class="sdc-icon">🖥️</div>
-          <h3>Mission-Critical Data Center Infrastructure</h3>
-          <p>Nexus Link is uniquely positioned to handle the extreme cooling algorithms and uninterruptible power requirements of high-density Data Centers — Tier III and Tier IV standards.</p>
-          <ul class="service-bullets">
-            <li>Precision Computer Room Air Conditioning (CRAC) units</li>
-            <li>Raised-floor cooling and hot/cold aisle containment</li>
-            <li>Tier III and Tier IV power infrastructure design</li>
-            <li>Fault-tolerant, concurrently maintainable backbones</li>
-            <li>Zero-downtime critical IT operation guarantee</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta-banner-simple">
-    <div class="container text-center">
-      <h2 class="section-title reveal">Discuss Your <span class="grad">Project Requirements</span></h2>
-      <p class="section-desc mx-auto mt-2 reveal reveal-delay-1">Our engineering and estimation teams are ready to provide a comprehensive consultation.</p>
-      <div class="flex items-center flex-wrap gap-2 mt-4 reveal reveal-delay-2" style="justify-content:center;">
-        <a href="contact.html" class="btn btn-primary">Request a Consultation</a>
-        <a href="projects.html" class="btn btn-outline">View Our Portfolio</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="index.html" class="nav-logo">NEXUS<span class="accent">LINK</span></a>
-          <p class="mt-2">Leading MEP & Infrastructure contractors delivering engineering excellence across UAE since 2004.</p>
-        </div>
-        <div class="footer-col"><h5>Company</h5><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="quality.html">Quality & HSE</a></li><li><a href="careers.html">Careers</a></li></ul></div>
-        <div class="footer-col"><h5>Services</h5><ul><li><a href="#mechanical">Mechanical</a></li><li><a href="#electrical">Electrical</a></li><li><a href="#plumbing">Plumbing & Fire</a></li><li><a href="#solar">Solar Energy</a></li></ul></div>
-        <div class="footer-col"><h5>Contact</h5><ul><li><span>PO Box 554639, Dubai, UAE</span></li><li><a href="tel:+97142802067">+971 4 280 2067</a></li><li><a href="mailto:info@nexuslink.ae">info@nexuslink.ae</a></li></ul></div>
-      </div>
-      <div class="footer-bottom">
-        <p>© 2026 Nexus Link Electromechanical L.L.C. All rights reserved.</p>
-        <p><a href="https://www.nexuslink.ae" target="_blank">www.nexuslink.ae</a></p>
-      </div>
-    </div>
-  </footer>
-</div>
-
-<button id="scroll-top" aria-label="Scroll to top">↑</button>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-<script src="assets/js/three-bg.js"></script>
-<script src="assets/js/nav.js"></script>
-<script>
-  // Pill active state
-  document.querySelectorAll('.pill').forEach(pill => {
-    pill.addEventListener('click', function() {
-      document.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
-      this.classList.add('active');
+  <button id="scroll-top" aria-label="Scroll to top">↑</button>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="assets/js/three-bg.js"></script>
+  <script src="assets/js/nav.js"></script>
+  <script>
+    // Pill active state
+    document.querySelectorAll('.pill').forEach(pill => {
+      pill.addEventListener('click', function () {
+        document.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+        this.classList.add('active');
+      });
     });
-  });
-</script>
-    <!-- Bootstrap 5 JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc4s9bIOgUxi8T/jzmW0xhE6bVsa6Kcd0ggVs8ul0/XK" crossorigin="anonymous"></script>
+  </script>
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc4s9bIOgUxi8T/jzmW0xhE6bVsa6Kcd0ggVs8ul0/XK"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

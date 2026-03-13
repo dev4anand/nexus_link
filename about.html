@@ -1,316 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Us — Nexus Link Electromechanical LLC</title>
-  <meta name="description" content="Since 2004, Nexus Link Electromechanical LLC has maintained an unwavering commitment to engineering excellence in UAE MEP projects. Learn about our mission, vision and proven methodology.">
+  <meta name="description"
+    content="Since 2004, Nexus Link Electromechanical LLC has maintained an unwavering commitment to engineering excellence in UAE MEP projects. Learn about our mission, vision and proven methodology.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300...900&family=Plus+Jakarta+Sans:ital,wght@0,300...800;1,400&display=swap" rel="stylesheet">
-    <!-- Bootstrap 5 CSS -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300...900&family=Plus+Jakarta+Sans:ital,wght@0,300...800;1,400&display=swap"
+    rel="stylesheet">
+  <!-- Bootstrap 5 CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="assets/css/global.css">
-  <link rel="stylesheet" href="assets/css/about.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
 </head>
+
 <body>
-<canvas id="bg-canvas"></canvas>
+  <canvas id="bg-canvas"></canvas>
 
-<div class="page-wrapper">
+  <div class="page-wrapper">
 
-  <!-- Navigation -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-container">
-      <a href="index.html" class="nav-logo">NEXUS<span class="accent">LINK</span></a>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About Us</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="sectors.html">Sectors</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="quality.html">Quality & HSE</a></li>
-        <li><a href="careers.html">Careers</a></li>
-        <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
-      </ul>
-        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle theme"><i class="bi bi-sun-fill icon-sun"></i><i class="bi bi-moon-fill icon-moon"></i></button>
-      <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="nav-logo">NEXUS<span class="accent">LINK</span></a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="sectors.html">Sectors</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="quality.html">Quality & HSE</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+        </ul>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle theme"><i
+            class="bi bi-sun-fill icon-sun"></i><i class="bi bi-moon-fill icon-moon"></i></button>
+        <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <button class="mobile-menu-close" id="menu-close">✕</button>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="sectors.html">Sectors</a>
+      <a href="projects.html">Projects</a>
+      <a href="quality.html">Quality & HSE</a>
+      <a href="careers.html">Careers</a>
+      <a href="contact.html">Contact Us</a>
     </div>
-  </nav>
 
-  <div class="mobile-menu" id="mobile-menu">
-    <button class="mobile-menu-close" id="menu-close">✕</button>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="services.html">Services</a>
-    <a href="sectors.html">Sectors</a>
-    <a href="projects.html">Projects</a>
-    <a href="quality.html">Quality & HSE</a>
-    <a href="careers.html">Careers</a>
-    <a href="contact.html">Contact Us</a>
+    <!-- Page Hero -->
+    <section class="page-hero about-hero">
+      <div class="page-hero-bg" style="background-image: url('images/company_image.png');"></div>
+      <div class="page-hero-overlay"></div>
+      <div class="container page-hero-content"
+        style="position:relative;z-index:2;padding-top:7rem;padding-bottom:4rem;">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li>About Us</li>
+          </ol>
+        </nav>
+        <span class="eyebrow reveal">Our Story</span>
+        <h1 class="page-hero-title reveal reveal-delay-1">About <span class="grad">Nexus Link</span></h1>
+        <p class="page-hero-desc reveal reveal-delay-2">Leading MEP Contractors in the UAE — Engineering Excellence
+          Since 2004</p>
+      </div>
+    </section>
+
+    <!-- ── Who We Are ── -->
+    <section class="section-pad" id="who-we-are">
+      <div class="container">
+        <div class="two-col">
+          <div class="col-text">
+            <span class="eyebrow reveal">Established 2004</span>
+            <h2 class="section-title reveal reveal-delay-1">Who We <span class="grad">Are</span></h2>
+            <div class="divider reveal reveal-delay-2"></div>
+            <p class="section-desc reveal reveal-delay-2">
+              Since our inception in 2004, Nexus Link Electromechanical LLC has maintained an unwavering commitment to
+              engineering excellence. We are leading mechanical, electrical, and plumbing contractors who believe in
+              sustainable engineering for a greener, more efficient tomorrow.
+            </p>
+            <p class="section-desc mt-3 reveal reveal-delay-3">
+              Our growth trajectory has allowed us to systematically expand our capabilities to handle complex
+              industrial facilities, soaring high-rise towers, and sprawling residential landscapes across the entire
+              UAE.
+            </p>
+            <p class="section-desc mt-3 reveal reveal-delay-3">
+              Our success is built on a foundation of trust, technical proficiency, and a relentless pursuit of
+              perfection. By continuously investing in our human capital and embracing the latest technological
+              innovations, we have cultivated a reputation for delivering projects on time, within budget, and to the
+              highest international specifications.
+            </p>
+          </div>
+          <div class="col-img reveal reveal-delay-2">
+            <div class="img-frame">
+              <img src="images/company_image.png" alt="Nexus Link Team" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Mission & Vision ── -->
+    <section class="section-pad mission-vision" id="mission-vision">
+      <div class="container">
+        <div class="mv-grid">
+          <div class="mv-card reveal">
+            <div class="mv-icon">🎯</div>
+            <h3>Our Mission</h3>
+            <p>
+              To deliver world-class engineering solutions with an absolute focus on sustainability, innovation, safety,
+              and a 100% client satisfaction framework. We take pride in building infrastructure that lasts generations,
+              ensuring that every wire laid and pipe installed contributes to the seamless operation of the societies we
+              serve.
+            </p>
+            <p class="mt-2">Our mission extends beyond mere construction; it is about creating environments where people
+              can live, work, and thrive safely.</p>
+          </div>
+          <div class="mv-card reveal reveal-delay-1">
+            <div class="mv-icon">🔭</div>
+            <h3>Our Vision</h3>
+            <p>
+              To remain the most trusted, leading MEP and Infrastructure contractor in the UAE, scaling higher peaks of
+              operational excellence. We envision a future where Nexus Link sets the global benchmark for execution
+              methodology, driven by a highly experienced workforce that pioneers smart, energy-efficient building
+              solutions.
+            </p>
+          </div>
+          <div class="mv-card reveal reveal-delay-2">
+            <div class="mv-icon">💡</div>
+            <h3>Our Core Values</h3>
+            <ul class="values-list">
+              <li>Engineering Excellence & Technical Mastery</li>
+              <li>Unwavering Commitment to Safety</li>
+              <li>Sustainability & Environmental Responsibility</li>
+              <li>Client-Centric Innovation</li>
+              <li>Integrity & Transparent Communication</li>
+              <li>Continuous Learning & Development</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Key Stats ── -->
+    <section class="section-pad stats-section">
+      <div class="container">
+        <div class="stat-grid">
+          <div class="stat-card reveal">
+            <div class="stat-number counter" data-target="20" data-suffix="+">0+</div>
+            <div class="stat-label">Years of Excellence in the Middle East</div>
+          </div>
+          <div class="stat-card reveal reveal-delay-1">
+            <div class="stat-number counter" data-target="400" data-suffix="+">0+</div>
+            <div class="stat-label">Successfully Completed Projects</div>
+          </div>
+          <div class="stat-card reveal reveal-delay-2">
+            <div class="stat-number counter" data-target="6" data-suffix="+">0+</div>
+            <div class="stat-label">Key Sectors Served</div>
+          </div>
+          <div class="stat-card reveal reveal-delay-3">
+            <div class="stat-number counter" data-target="2000" data-suffix="+">0+</div>
+            <div class="stat-label">Skilled Professionals</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Why Choose Section ── -->
+    <section class="section-pad" id="why-choose">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="eyebrow reveal">Our Differentiators</span>
+          <h2 class="section-title reveal reveal-delay-1">Why Choose <span class="grad">Nexus Link</span></h2>
+        </div>
+
+        <div class="why-grid mt-4">
+          <div class="why-big-card reveal">
+            <div class="why-icon">🏗️</div>
+            <h3>Deep Technical Expertise</h3>
+            <p>For nearly two decades, our engineers and technicians have designed, executed, and maintained highly
+              sophisticated systems for High-Rise, Commercial, Residential, Healthcare, and Hospitality projects.</p>
+            <p class="mt-2">We possess the institutional knowledge necessary to navigate complex regulatory frameworks
+              and solve intricate engineering challenges on the fly. This wealth of experience translates into smoother
+              project life cycles and significantly reduced risks for our clients.</p>
+          </div>
+          <div class="why-big-card reveal reveal-delay-1">
+            <div class="why-icon">🏭</div>
+            <h3>MEP Pre-Fabricated Modular Systems</h3>
+            <p>Nexus Link is at the forefront of construction innovation. We focus heavily on designing, producing, and
+              installing MEP Modular Systems. By shifting a significant portion of assembly to our controlled factory
+              environments, we achieve dramatic time savings of up to 60%.</p>
+            <p class="mt-2">Furthermore, this concurrent off-site production improves environmental KPIs — minimizing
+              on-site dust, waste, and noise pollution. Prefabrication guarantees higher precision, better quality
+              control, and safer installation environments.</p>
+          </div>
+          <div class="why-big-card reveal reveal-delay-2">
+            <div class="why-icon">💻</div>
+            <h3>Advanced BIM & Engineering Integration</h3>
+            <p>We deploy state-of-the-art Building Information Modeling (BIM) via Revit software to conduct extensive
+              system analysis, optimize spatial design, and deliver fully coordinated models seamlessly.</p>
+            <p class="mt-2">Our integrated BIM workflows allow our office engineers and field technicians to collaborate
+              in real-time. This dynamic clash resolution workflow prevents costly rework delays during active
+              construction, allowing us to deliver complex architectural visions with pinpoint accuracy.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Our Methodology ── -->
+    <section class="section-pad methodology-section" id="methodology">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="eyebrow reveal">How We Work</span>
+          <h2 class="section-title reveal reveal-delay-1">Our Proven <span class="grad">7-Step Methodology</span></h2>
+          <p class="section-desc mx-auto mt-2 reveal reveal-delay-2">A structured, unyielding framework that guarantees
+            success, risk mitigation, and absolute transparency on every project site.</p>
+        </div>
+
+        <div class="methodology-timeline mt-4">
+          <div class="method-step reveal">
+            <div class="step-num">01</div>
+            <div class="step-content">
+              <h3>Human Resources & Talent Alignment</h3>
+              <p>We begin by setting up a dedicated organization structure tailored to the specific demands of the
+                project. We prepare comprehensive project duty matrices and conduct specialized workforce training to
+                ensure every team member understands their unique responsibilities within the distribution of duties.
+              </p>
+            </div>
+          </div>
+          <div class="method-step reveal reveal-delay-1">
+            <div class="step-num">02</div>
+            <div class="step-content">
+              <h3>Engineering Works & Design Precision</h3>
+              <p>Our engineering department conducts a deep-dive design review, recalculating loads and capacities. We
+                utilize BIM Modeling to identify and resolve clashes long before construction begins. We rigorously
+                prepare Material Submissions and secure approvals for detailed Method Statements.</p>
+            </div>
+          </div>
+          <div class="method-step reveal reveal-delay-2">
+            <div class="step-num">03</div>
+            <div class="step-content">
+              <h3>Procurement and Logistics Management</h3>
+              <p>Through rigorous vendor selection and cost-effective negotiation, we establish a robust supply chain.
+                We guarantee that all imported and locally sourced materials meet stringent quality standards and arrive
+                on-site exactly when needed, preventing costly delays.</p>
+            </div>
+          </div>
+          <div class="method-step reveal reveal-delay-3">
+            <div class="step-num">04</div>
+            <div class="step-content">
+              <h3>Planning, Scheduling, and Cost Control</h3>
+              <p>We establish dynamic baseline schedules mapped against resource availability. Our cost tracking
+                mechanisms provide real-time productivity analysis and financial audits, allowing us to maintain strict
+                budget adherence without compromising quality.</p>
+            </div>
+          </div>
+          <div class="method-step reveal">
+            <div class="step-num">05</div>
+            <div class="step-content">
+              <h3>Site Construction & Execution</h3>
+              <p>Led by veteran project managers, we provide direct site supervision. We orchestrate specialized MEP
+                installations, optimize construction sequencing, and proactively mitigate geographical and environmental
+                risks inherent to active construction zones.</p>
+            </div>
+          </div>
+          <div class="method-step reveal reveal-delay-1">
+            <div class="step-num">06</div>
+            <div class="step-content">
+              <h3>QA/QC and HSE Monitoring</h3>
+              <p>We enforce strict zero-harm policies. Dedicated safety officers monitor daily activities while our
+                quality control engineers conduct stringent inspections on both delivered materials and modular
+                installations, ensuring total compliance with approved drawings.</p>
+            </div>
+          </div>
+          <div class="method-step reveal reveal-delay-2">
+            <div class="step-num">07</div>
+            <div class="step-content">
+              <h3>Testing, Commissioning & Handover</h3>
+              <p>The final phase involves exhaustive Factory Acceptance Tests (FAT) and Site Acceptance Tests (SAT). We
+                deliver comprehensive As-Built Drawings, operational training, and detailed Operations & Maintenance
+                Manuals (O&M Manuals), ensuring a seamless handover.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner-simple">
+      <div class="container text-center">
+        <h2 class="section-title reveal">Ready to Work <span class="grad">Together?</span></h2>
+        <p class="section-desc mx-auto mt-2 reveal reveal-delay-1">Contact our engineering directors and estimation team
+          to discuss your project requirements.</p>
+        <div class="flex items-center flex-wrap gap-2 mt-4 reveal reveal-delay-2" style="justify-content:center;">
+          <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+          <a href="projects.html" class="btn btn-outline">View Our Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="index.html" class="nav-logo">NEXUS<span class="accent">LINK</span></a>
+            <p class="mt-2">Leading MEP & Infrastructure contractors delivering engineering excellence across UAE since
+              2004.</p>
+          </div>
+          <div class="footer-col">
+            <h5>Company</h5>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="quality.html">Quality & HSE</a></li>
+              <li><a href="careers.html">Careers</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Services</h5>
+            <ul>
+              <li><a href="services.html#mechanical">Mechanical</a></li>
+              <li><a href="services.html#electrical">Electrical</a></li>
+              <li><a href="services.html#plumbing">Plumbing & Fire</a></li>
+              <li><a href="services.html#solar">Solar Energy</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Contact</h5>
+            <ul>
+              <li><span>PO Box 554639, Dubai, UAE</span></li>
+              <li><a href="tel:+97142802067">+971 4 280 2067</a></li>
+              <li><a href="mailto:info@nexuslink.ae">info@nexuslink.ae</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 Nexus Link Electromechanical L.L.C. All rights reserved.</p>
+          <p><a href="https://www.nexuslink.ae" target="_blank">www.nexuslink.ae</a></p>
+        </div>
+      </div>
+    </footer>
   </div>
 
-  <!-- Page Hero -->
-  <section class="page-hero about-hero">
-    <div class="page-hero-bg" style="background-image: url('images/company_image.png');"></div>
-    <div class="page-hero-overlay"></div>
-    <div class="container page-hero-content" style="position:relative;z-index:2;padding-top:7rem;padding-bottom:4rem;">
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li><a href="index.html">Home</a></li>
-          <li>About Us</li>
-        </ol>
-      </nav>
-      <span class="eyebrow reveal">Our Story</span>
-      <h1 class="page-hero-title reveal reveal-delay-1">About <span class="grad">Nexus Link</span></h1>
-      <p class="page-hero-desc reveal reveal-delay-2">Leading MEP Contractors in the UAE — Engineering Excellence Since 2004</p>
-    </div>
-  </section>
+  <button id="scroll-top" aria-label="Scroll to top">↑</button>
 
-  <!-- ── Who We Are ── -->
-  <section class="section-pad" id="who-we-are">
-    <div class="container">
-      <div class="two-col">
-        <div class="col-text">
-          <span class="eyebrow reveal">Established 2004</span>
-          <h2 class="section-title reveal reveal-delay-1">Who We <span class="grad">Are</span></h2>
-          <div class="divider reveal reveal-delay-2"></div>
-          <p class="section-desc reveal reveal-delay-2">
-            Since our inception in 2004, Nexus Link Electromechanical LLC has maintained an unwavering commitment to engineering excellence. We are leading mechanical, electrical, and plumbing contractors who believe in sustainable engineering for a greener, more efficient tomorrow.
-          </p>
-          <p class="section-desc mt-3 reveal reveal-delay-3">
-            Our growth trajectory has allowed us to systematically expand our capabilities to handle complex industrial facilities, soaring high-rise towers, and sprawling residential landscapes across the entire UAE.
-          </p>
-          <p class="section-desc mt-3 reveal reveal-delay-3">
-            Our success is built on a foundation of trust, technical proficiency, and a relentless pursuit of perfection. By continuously investing in our human capital and embracing the latest technological innovations, we have cultivated a reputation for delivering projects on time, within budget, and to the highest international specifications.
-          </p>
-        </div>
-        <div class="col-img reveal reveal-delay-2">
-          <div class="img-frame">
-            <img src="images/company_image.png" alt="Nexus Link Team" loading="lazy">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── Mission & Vision ── -->
-  <section class="section-pad mission-vision" id="mission-vision">
-    <div class="container">
-      <div class="mv-grid">
-        <div class="mv-card reveal">
-          <div class="mv-icon">🎯</div>
-          <h3>Our Mission</h3>
-          <p>
-            To deliver world-class engineering solutions with an absolute focus on sustainability, innovation, safety, and a 100% client satisfaction framework. We take pride in building infrastructure that lasts generations, ensuring that every wire laid and pipe installed contributes to the seamless operation of the societies we serve.
-          </p>
-          <p class="mt-2">Our mission extends beyond mere construction; it is about creating environments where people can live, work, and thrive safely.</p>
-        </div>
-        <div class="mv-card reveal reveal-delay-1">
-          <div class="mv-icon">🔭</div>
-          <h3>Our Vision</h3>
-          <p>
-            To remain the most trusted, leading MEP and Infrastructure contractor in the UAE, scaling higher peaks of operational excellence. We envision a future where Nexus Link sets the global benchmark for execution methodology, driven by a highly experienced workforce that pioneers smart, energy-efficient building solutions.
-          </p>
-        </div>
-        <div class="mv-card reveal reveal-delay-2">
-          <div class="mv-icon">💡</div>
-          <h3>Our Core Values</h3>
-          <ul class="values-list">
-            <li>Engineering Excellence & Technical Mastery</li>
-            <li>Unwavering Commitment to Safety</li>
-            <li>Sustainability & Environmental Responsibility</li>
-            <li>Client-Centric Innovation</li>
-            <li>Integrity & Transparent Communication</li>
-            <li>Continuous Learning & Development</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── Key Stats ── -->
-  <section class="section-pad stats-section">
-    <div class="container">
-      <div class="stat-grid">
-        <div class="stat-card reveal">
-          <div class="stat-number counter" data-target="20" data-suffix="+">0+</div>
-          <div class="stat-label">Years of Excellence in the Middle East</div>
-        </div>
-        <div class="stat-card reveal reveal-delay-1">
-          <div class="stat-number counter" data-target="400" data-suffix="+">0+</div>
-          <div class="stat-label">Successfully Completed Projects</div>
-        </div>
-        <div class="stat-card reveal reveal-delay-2">
-          <div class="stat-number counter" data-target="6" data-suffix="+">0+</div>
-          <div class="stat-label">Key Sectors Served</div>
-        </div>
-        <div class="stat-card reveal reveal-delay-3">
-          <div class="stat-number counter" data-target="2000" data-suffix="+">0+</div>
-          <div class="stat-label">Skilled Professionals</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── Why Choose Section ── -->
-  <section class="section-pad" id="why-choose">
-    <div class="container">
-      <div class="section-header text-center">
-        <span class="eyebrow reveal">Our Differentiators</span>
-        <h2 class="section-title reveal reveal-delay-1">Why Choose <span class="grad">Nexus Link</span></h2>
-      </div>
-
-      <div class="why-grid mt-4">
-        <div class="why-big-card reveal">
-          <div class="why-icon">🏗️</div>
-          <h3>Deep Technical Expertise</h3>
-          <p>For nearly two decades, our engineers and technicians have designed, executed, and maintained highly sophisticated systems for High-Rise, Commercial, Residential, Healthcare, and Hospitality projects.</p>
-          <p class="mt-2">We possess the institutional knowledge necessary to navigate complex regulatory frameworks and solve intricate engineering challenges on the fly. This wealth of experience translates into smoother project life cycles and significantly reduced risks for our clients.</p>
-        </div>
-        <div class="why-big-card reveal reveal-delay-1">
-          <div class="why-icon">🏭</div>
-          <h3>MEP Pre-Fabricated Modular Systems</h3>
-          <p>Nexus Link is at the forefront of construction innovation. We focus heavily on designing, producing, and installing MEP Modular Systems. By shifting a significant portion of assembly to our controlled factory environments, we achieve dramatic time savings of up to 60%.</p>
-          <p class="mt-2">Furthermore, this concurrent off-site production improves environmental KPIs — minimizing on-site dust, waste, and noise pollution. Prefabrication guarantees higher precision, better quality control, and safer installation environments.</p>
-        </div>
-        <div class="why-big-card reveal reveal-delay-2">
-          <div class="why-icon">💻</div>
-          <h3>Advanced BIM & Engineering Integration</h3>
-          <p>We deploy state-of-the-art Building Information Modeling (BIM) via Revit software to conduct extensive system analysis, optimize spatial design, and deliver fully coordinated models seamlessly.</p>
-          <p class="mt-2">Our integrated BIM workflows allow our office engineers and field technicians to collaborate in real-time. This dynamic clash resolution workflow prevents costly rework delays during active construction, allowing us to deliver complex architectural visions with pinpoint accuracy.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── Our Methodology ── -->
-  <section class="section-pad methodology-section" id="methodology">
-    <div class="container">
-      <div class="section-header text-center">
-        <span class="eyebrow reveal">How We Work</span>
-        <h2 class="section-title reveal reveal-delay-1">Our Proven <span class="grad">7-Step Methodology</span></h2>
-        <p class="section-desc mx-auto mt-2 reveal reveal-delay-2">A structured, unyielding framework that guarantees success, risk mitigation, and absolute transparency on every project site.</p>
-      </div>
-
-      <div class="methodology-timeline mt-4">
-        <div class="method-step reveal">
-          <div class="step-num">01</div>
-          <div class="step-content">
-            <h3>Human Resources & Talent Alignment</h3>
-            <p>We begin by setting up a dedicated organization structure tailored to the specific demands of the project. We prepare comprehensive project duty matrices and conduct specialized workforce training to ensure every team member understands their unique responsibilities within the distribution of duties.</p>
-          </div>
-        </div>
-        <div class="method-step reveal reveal-delay-1">
-          <div class="step-num">02</div>
-          <div class="step-content">
-            <h3>Engineering Works & Design Precision</h3>
-            <p>Our engineering department conducts a deep-dive design review, recalculating loads and capacities. We utilize BIM Modeling to identify and resolve clashes long before construction begins. We rigorously prepare Material Submissions and secure approvals for detailed Method Statements.</p>
-          </div>
-        </div>
-        <div class="method-step reveal reveal-delay-2">
-          <div class="step-num">03</div>
-          <div class="step-content">
-            <h3>Procurement and Logistics Management</h3>
-            <p>Through rigorous vendor selection and cost-effective negotiation, we establish a robust supply chain. We guarantee that all imported and locally sourced materials meet stringent quality standards and arrive on-site exactly when needed, preventing costly delays.</p>
-          </div>
-        </div>
-        <div class="method-step reveal reveal-delay-3">
-          <div class="step-num">04</div>
-          <div class="step-content">
-            <h3>Planning, Scheduling, and Cost Control</h3>
-            <p>We establish dynamic baseline schedules mapped against resource availability. Our cost tracking mechanisms provide real-time productivity analysis and financial audits, allowing us to maintain strict budget adherence without compromising quality.</p>
-          </div>
-        </div>
-        <div class="method-step reveal">
-          <div class="step-num">05</div>
-          <div class="step-content">
-            <h3>Site Construction & Execution</h3>
-            <p>Led by veteran project managers, we provide direct site supervision. We orchestrate specialized MEP installations, optimize construction sequencing, and proactively mitigate geographical and environmental risks inherent to active construction zones.</p>
-          </div>
-        </div>
-        <div class="method-step reveal reveal-delay-1">
-          <div class="step-num">06</div>
-          <div class="step-content">
-            <h3>QA/QC and HSE Monitoring</h3>
-            <p>We enforce strict zero-harm policies. Dedicated safety officers monitor daily activities while our quality control engineers conduct stringent inspections on both delivered materials and modular installations, ensuring total compliance with approved drawings.</p>
-          </div>
-        </div>
-        <div class="method-step reveal reveal-delay-2">
-          <div class="step-num">07</div>
-          <div class="step-content">
-            <h3>Testing, Commissioning & Handover</h3>
-            <p>The final phase involves exhaustive Factory Acceptance Tests (FAT) and Site Acceptance Tests (SAT). We deliver comprehensive As-Built Drawings, operational training, and detailed Operations & Maintenance Manuals (O&M Manuals), ensuring a seamless handover.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta-banner-simple">
-    <div class="container text-center">
-      <h2 class="section-title reveal">Ready to Work <span class="grad">Together?</span></h2>
-      <p class="section-desc mx-auto mt-2 reveal reveal-delay-1">Contact our engineering directors and estimation team to discuss your project requirements.</p>
-      <div class="flex items-center flex-wrap gap-2 mt-4 reveal reveal-delay-2" style="justify-content:center;">
-        <a href="contact.html" class="btn btn-primary">Get In Touch</a>
-        <a href="projects.html" class="btn btn-outline">View Our Projects</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="index.html" class="nav-logo">NEXUS<span class="accent">LINK</span></a>
-          <p class="mt-2">Leading MEP & Infrastructure contractors delivering engineering excellence across UAE since 2004.</p>
-        </div>
-        <div class="footer-col">
-          <h5>Company</h5>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="quality.html">Quality & HSE</a></li>
-            <li><a href="careers.html">Careers</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h5>Services</h5>
-          <ul>
-            <li><a href="services.html#mechanical">Mechanical</a></li>
-            <li><a href="services.html#electrical">Electrical</a></li>
-            <li><a href="services.html#plumbing">Plumbing & Fire</a></li>
-            <li><a href="services.html#solar">Solar Energy</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h5>Contact</h5>
-          <ul>
-            <li><span>PO Box 554639, Dubai, UAE</span></li>
-            <li><a href="tel:+97142802067">+971 4 280 2067</a></li>
-            <li><a href="mailto:info@nexuslink.ae">info@nexuslink.ae</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>© 2026 Nexus Link Electromechanical L.L.C. All rights reserved.</p>
-        <p><a href="https://www.nexuslink.ae" target="_blank">www.nexuslink.ae</a></p>
-      </div>
-    </div>
-  </footer>
-</div>
-
-<button id="scroll-top" aria-label="Scroll to top">↑</button>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-<script src="assets/js/three-bg.js"></script>
-<script src="assets/js/nav.js"></script>
-    <!-- Bootstrap 5 JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc4s9bIOgUxi8T/jzmW0xhE6bVsa6Kcd0ggVs8ul0/XK" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="assets/js/three-bg.js"></script>
+  <script src="assets/js/nav.js"></script>
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc4s9bIOgUxi8T/jzmW0xhE6bVsa6Kcd0ggVs8ul0/XK"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
