@@ -1,455 +1,509 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nexus Link Electromechanical LLC — Leading MEP Contractors in UAE</title>
-  <meta name="description" content="Nexus Link Electromechanical LLC — Leading MEP contractors in UAE since 2004. Expert Mechanical, Electrical & Plumbing solutions for commercial, residential, and industrial projects.">
-  <meta name="keywords" content="MEP contractors UAE, mechanical electrical plumbing Dubai, HVAC, fire safety, electrical systems, Nexus Link">
+  <meta name="description"
+    content="Nexus Link Electromechanical LLC — Leading MEP contractors in UAE since 2004. Expert Mechanical, Electrical & Plumbing solutions for commercial, residential, and industrial projects.">
+  <meta name="keywords"
+    content="MEP contractors UAE, mechanical electrical plumbing Dubai, HVAC, fire safety, electrical systems, Nexus Link">
   <meta property="og:title" content="Nexus Link Electromechanical LLC">
-  <meta property="og:description" content="Delivering Quality, Reliability and Innovation in MEP & Infrastructure since 2004.">
+  <meta property="og:description"
+    content="Delivering Quality, Reliability and Innovation in MEP & Infrastructure since 2004.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.nexuslink.ae">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Bootstrap 5 CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300...900&family=Plus+Jakarta+Sans:ital,wght@0,300...800;1,400&display=swap"
+    rel="stylesheet">
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/global.css">
   <link rel="stylesheet" href="assets/css/home.css">
 </head>
+
 <body>
 
-<!-- Three.js Background -->
-<canvas id="bg-canvas"></canvas>
+  <!-- Three.js Background -->
+  <canvas id="bg-canvas"></canvas>
 
-<div class="page-wrapper">
+  <div class="page-wrapper">
 
-  <!-- ─── Navigation ─── -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-container">
-      <a href="index.html" class="nav-logo">NEXUS<span class="accent">LINK</span></a>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="sectors.html">Sectors</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="quality.html">Quality & HSE</a></li>
-        <li><a href="careers.html">Careers</a></li>
-        <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
-      </ul>
-      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle theme"><span class="icon-sun">&#x2600;&#xFE0F;</span><span class="icon-moon">&#x1F319;</span></button>
-      <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
-
-  <!-- Mobile Menu -->
-  <div class="mobile-menu" id="mobile-menu">
-    <button class="mobile-menu-close" id="menu-close">✕</button>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="services.html">Services</a>
-    <a href="sectors.html">Sectors</a>
-    <a href="projects.html">Projects</a>
-    <a href="quality.html">Quality & HSE</a>
-    <a href="careers.html">Careers</a>
-    <a href="contact.html">Contact Us</a>
-  </div>
-
-  <!-- ─── Hero Section ─── -->
-  <section class="hero" id="hero">
-    <div class="hero-bg" style="background-image: url('images/image.png');"></div>
-    <div class="hero-overlay"></div>
-    <div class="hero-content container">
-      <div class="hero-tag reveal">
-        <span class="dot"></span> UAE's Premier MEP Contractor Since 2004
+    <!-- ─── Navigation ─── -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="nav-logo">NEXUS<span class="accent">LINK</span></a>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="sectors.html">Sectors</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="quality.html">Quality & HSE</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+        </ul>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle theme"><span
+            class="icon-sun">&#x2600;&#xFE0F;</span><span class="icon-moon">&#x1F319;</span></button>
+        <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
       </div>
-      <h1 class="hero-title reveal reveal-delay-1">
-        Delivering <span class="grad">Quality,</span><br>
-        Reliability & <span class="grad">Innovation</span>
-      </h1>
-      <p class="hero-desc reveal reveal-delay-2">
-        Nexus Link Electromechanical LLC stands as a beacon of reliability in the UAE's construction sector. Comprehensive, integrated MEP solutions that power the nation's critical infrastructure.
-      </p>
-      <div class="hero-actions reveal reveal-delay-3">
-        <a href="projects.html" class="btn btn-primary">Our Projects</a>
-        <a href="about.html" class="btn btn-outline">Discover Us</a>
-      </div>
+    </nav>
 
-      <!-- MEP Pillars -->
-      <div class="hero-pillars reveal reveal-delay-4">
-        <div class="pillar">
-          <span class="pillar-icon">⚙️</span>
-          <span>Mechanical</span>
-        </div>
-        <div class="pillar-sep"></div>
-        <div class="pillar">
-          <span class="pillar-icon">⚡</span>
-          <span>Electrical</span>
-        </div>
-        <div class="pillar-sep"></div>
-        <div class="pillar">
-          <span class="pillar-icon">💧</span>
-          <span>Plumbing</span>
-        </div>
-        <div class="pillar-sep"></div>
-        <div class="pillar">
-          <span class="pillar-icon">☀️</span>
-          <span>Solar</span>
-        </div>
-      </div>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <button class="mobile-menu-close" id="menu-close">✕</button>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="sectors.html">Sectors</a>
+      <a href="projects.html">Projects</a>
+      <a href="quality.html">Quality & HSE</a>
+      <a href="careers.html">Careers</a>
+      <a href="contact.html">Contact Us</a>
     </div>
-    <div class="hero-scroll-hint">
-      <div class="scroll-line"></div>
-      <span>Scroll</span>
-    </div>
-  </section>
 
-  <!-- ─── Key Statistics ─── -->
-  <section class="section-pad" id="stats">
-    <div class="container">
-      <div class="stat-grid">
-        <div class="stat-card reveal">
-          <div class="stat-number counter" data-target="20" data-suffix="+">0+</div>
-          <div class="stat-label">Years of Excellence</div>
+    <!-- ─── Hero Section ─── -->
+    <section class="hero" id="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content container">
+        <div class="hero-tag reveal">
+          <span class="dot"></span> UAE's Premier MEP Contractor Since 2004
         </div>
-        <div class="stat-card reveal reveal-delay-1">
-          <div class="stat-number counter" data-target="400" data-suffix="+">0+</div>
-          <div class="stat-label">Projects Completed</div>
+        <h1 class="hero-title reveal reveal-delay-1">
+          Delivering <span class="grad">Quality,</span><br>
+          Reliability & <span class="grad">Innovation</span>
+        </h1>
+        <p class="hero-desc reveal reveal-delay-2">
+          Nexus Link Electromechanical LLC stands as a beacon of reliability in the UAE's construction sector.
+          Comprehensive, integrated MEP solutions that power the nation's critical infrastructure.
+        </p>
+        <div class="hero-actions reveal reveal-delay-3">
+          <a href="projects.html" class="btn btn-primary">Our Projects</a>
+          <a href="about.html" class="btn btn-outline">Discover Us</a>
         </div>
-        <div class="stat-card reveal reveal-delay-2">
-          <div class="stat-number counter" data-target="6" data-suffix="+">0+</div>
-          <div class="stat-label">Key Sectors Served</div>
-        </div>
-        <div class="stat-card reveal reveal-delay-3">
-          <div class="stat-number counter" data-target="2000" data-suffix="+">0+</div>
-          <div class="stat-label">Skilled Professionals</div>
+
+        <!-- MEP Pillars -->
+        <div class="hero-pillars reveal reveal-delay-4">
+          <div class="pillar">
+            <span class="pillar-icon">⚙️</span>
+            <span>Mechanical</span>
+          </div>
+          <div class="pillar-sep"></div>
+          <div class="pillar">
+            <span class="pillar-icon">⚡</span>
+            <span>Electrical</span>
+          </div>
+          <div class="pillar-sep"></div>
+          <div class="pillar">
+            <span class="pillar-icon">💧</span>
+            <span>Plumbing</span>
+          </div>
+          <div class="pillar-sep"></div>
+          <div class="pillar">
+            <span class="pillar-icon">☀️</span>
+            <span>Solar</span>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+      <div class="hero-scroll-hint">
+        <div class="scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+    </section>
 
-  <!-- ─── About Preview ─── -->
-  <section class="section-pad about-preview" id="about-preview">
-    <div class="container">
-      <div class="two-col">
-        <div class="col-text">
-          <span class="eyebrow reveal">Established 2004</span>
-          <h2 class="section-title reveal reveal-delay-1">Engineering Excellence & <span class="grad">Sustainable Innovation</span></h2>
-          <div class="divider reveal reveal-delay-2"></div>
-          <p class="section-desc reveal reveal-delay-2">
-            Nexus Link Electromechanical LLC stands as a beacon of reliability in the UAE's rapidly advancing construction sector. Over the past two decades, our unwavering dedication to engineering excellence, operational safety, and client satisfaction has positioned us as a top-tier contractor.
-          </p>
-          <p class="section-desc mt-3 reveal reveal-delay-3">
-            Our holistic approach ensures that every undertaking — from initial blueprint design to final on-site commissioning — is handled with the utmost professionalism. We provide robust systems that stand the test of time.
-          </p>
-          <div class="feature-list reveal reveal-delay-4">
-            <div class="feature-item">
-              <span class="feature-icon">✓</span>
-              <span>BIM Modeling & Advanced Engineering</span>
+    <!-- ─── Key Statistics ─── -->
+    <section class="section-pad" id="stats">
+      <div class="container">
+        <div class="stat-grid">
+          <div class="stat-card reveal">
+            <div class="stat-number counter" data-target="20" data-suffix="+">0+</div>
+            <div class="stat-label">Years of Excellence</div>
+          </div>
+          <div class="stat-card reveal reveal-delay-1">
+            <div class="stat-number counter" data-target="400" data-suffix="+">0+</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat-card reveal reveal-delay-2">
+            <div class="stat-number counter" data-target="6" data-suffix="+">0+</div>
+            <div class="stat-label">Key Sectors Served</div>
+          </div>
+          <div class="stat-card reveal reveal-delay-3">
+            <div class="stat-number counter" data-target="2000" data-suffix="+">0+</div>
+            <div class="stat-label">Skilled Professionals</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── About Preview ─── -->
+    <section class="section-pad about-preview" id="about-preview">
+      <div class="container">
+        <div class="two-col">
+          <div class="col-text">
+            <span class="eyebrow reveal">Established 2004</span>
+            <h2 class="section-title reveal reveal-delay-1">Engineering Excellence & <span class="grad">Sustainable
+                Innovation</span></h2>
+            <div class="divider reveal reveal-delay-2"></div>
+            <p class="section-desc reveal reveal-delay-2">
+              Nexus Link Electromechanical LLC stands as a beacon of reliability in the UAE's rapidly advancing
+              construction sector. Over the past two decades, our unwavering dedication to engineering excellence,
+              operational safety, and client satisfaction has positioned us as a top-tier contractor.
+            </p>
+            <p class="section-desc mt-3 reveal reveal-delay-3">
+              Our holistic approach ensures that every undertaking — from initial blueprint design to final on-site
+              commissioning — is handled with the utmost professionalism. We provide robust systems that stand the test
+              of time.
+            </p>
+            <div class="feature-list reveal reveal-delay-4">
+              <div class="feature-item">
+                <span class="feature-icon">✓</span>
+                <span>BIM Modeling & Advanced Engineering</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">✓</span>
+                <span>MEP Pre-Fabricated Modular Systems</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">✓</span>
+                <span>ISO-Compliant QA/QC Framework</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">✓</span>
+                <span>Zero-Harm HSE Safety Culture</span>
+              </div>
             </div>
-            <div class="feature-item">
-              <span class="feature-icon">✓</span>
-              <span>MEP Pre-Fabricated Modular Systems</span>
+            <a href="about.html" class="btn btn-primary mt-4 reveal reveal-delay-5">Learn More About Us</a>
+          </div>
+          <div class="col-img reveal reveal-delay-2">
+            <div class="img-frame">
+              <img src="images/company_image.png" alt="Nexus Link MEP team at work" loading="lazy">
             </div>
-            <div class="feature-item">
-              <span class="feature-icon">✓</span>
-              <span>ISO-Compliant QA/QC Framework</span>
-            </div>
-            <div class="feature-item">
-              <span class="feature-icon">✓</span>
-              <span>Zero-Harm HSE Safety Culture</span>
+            <div class="img-badge">
+              <span class="badge-num">2004</span>
+              <span class="badge-label">Year Founded</span>
             </div>
           </div>
-          <a href="about.html" class="btn btn-primary mt-4 reveal reveal-delay-5">Learn More About Us</a>
-        </div>
-        <div class="col-img reveal reveal-delay-2">
-          <div class="img-frame">
-            <img src="images/company_image.png" alt="Nexus Link MEP team at work" loading="lazy">
-          </div>
-          <div class="img-badge">
-            <span class="badge-num">2004</span>
-            <span class="badge-label">Year Founded</span>
-          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ─── Services Overview ─── -->
-  <section class="section-pad services-overview" id="services-overview">
-    <div class="container">
-      <div class="section-header text-center">
-        <span class="eyebrow reveal">Our Expertise</span>
-        <h2 class="section-title reveal reveal-delay-1">Comprehensive <span class="grad">MEP Services</span></h2>
-        <p class="section-desc mx-auto mt-2 reveal reveal-delay-2">End-to-end mechanical, electrical, plumbing, and specialized infrastructure solutions</p>
-      </div>
-
-      <div class="services-grid mt-4">
-        <a href="services.html#mechanical" class="service-card reveal">
-          <div class="service-icon-wrap">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 8v4l3 3"/></svg>
-          </div>
-          <h3>Mechanical Systems</h3>
-          <p>Advanced HVAC, VAV systems, HEPA filtration, chillers, and vertical transportation solutions for all building types.</p>
-          <span class="card-link">Explore →</span>
-        </a>
-        <a href="services.html#electrical" class="service-card reveal reveal-delay-1">
-          <div class="service-icon-wrap">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-          </div>
-          <h3>Electrical Systems</h3>
-          <p>High, medium and low voltage distribution, UPS systems, intelligent automation, and life-safety installations.</p>
-          <span class="card-link">Explore →</span>
-        </a>
-        <a href="services.html#plumbing" class="service-card reveal reveal-delay-2">
-          <div class="service-icon-wrap">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v6m0 0c0 3.5-3 6-3 9.5A3 3 0 0012 21a3 3 0 003-3.5c0-3.5-3-6-3-9.5z"/></svg>
-          </div>
-          <h3>Plumbing & Fire Safety</h3>
-          <p>Comprehensive plumbing, public health engineering, and advanced fire suppression systems to NFPA / UAE Civil Defence standards.</p>
-          <span class="card-link">Explore →</span>
-        </a>
-        <a href="services.html#solar" class="service-card reveal reveal-delay-3">
-          <div class="service-icon-wrap">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/></svg>
-          </div>
-          <h3>Solar Energy & Data Centers</h3>
-          <p>Turnkey PV solar systems aligned with Shams Dubai, plus mission-critical Tier III/IV data center infrastructure.</p>
-          <span class="card-link">Explore →</span>
-        </a>
-      </div>
-
-      <div class="text-center mt-4">
-        <a href="services.html" class="btn btn-outline reveal">View All Services</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ─── Why Choose Us ─── -->
-  <section class="section-pad why-us" id="why-us">
-    <div class="container">
-      <div class="section-header text-center">
-        <span class="eyebrow reveal">Why Nexus Link</span>
-        <h2 class="section-title reveal reveal-delay-1">The Nexus Link <span class="grad">Advantage</span></h2>
-      </div>
-
-      <div class="why-grid mt-4">
-        <div class="why-card reveal">
-          <div class="why-num">01</div>
-          <h3>Deep Technical Expertise</h3>
-          <p>Nearly two decades of institutional knowledge in high-rise, commercial, healthcare, and hospitality MEP systems. We solve complex engineering challenges with proven mastery.</p>
+    <!-- ─── Services Overview ─── -->
+    <section class="section-pad services-overview" id="services-overview">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="eyebrow reveal">Our Expertise</span>
+          <h2 class="section-title reveal reveal-delay-1">Comprehensive <span class="grad">MEP Services</span></h2>
+          <p class="section-desc mx-auto mt-2 reveal reveal-delay-2">End-to-end mechanical, electrical, plumbing, and
+            specialized infrastructure solutions</p>
         </div>
-        <div class="why-card reveal reveal-delay-1">
-          <div class="why-num">02</div>
-          <h3>MEP Pre-Fabricated Modular</h3>
-          <p>Pioneering off-site modular production achieving up to 60% time savings, with dramatically reduced on-site dust, waste, and noise — delivering superior precision and quality control.</p>
+
+        <div class="services-grid mt-4">
+          <a href="services.html#mechanical" class="service-card reveal">
+            <div class="service-icon-wrap">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
+                <path d="M12 8v4l3 3" />
+              </svg>
+            </div>
+            <h3>Mechanical Systems</h3>
+            <p>Advanced HVAC, VAV systems, HEPA filtration, chillers, and vertical transportation solutions for all
+              building types.</p>
+            <span class="card-link">Explore →</span>
+          </a>
+          <a href="services.html#electrical" class="service-card reveal reveal-delay-1">
+            <div class="service-icon-wrap">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+              </svg>
+            </div>
+            <h3>Electrical Systems</h3>
+            <p>High, medium and low voltage distribution, UPS systems, intelligent automation, and life-safety
+              installations.</p>
+            <span class="card-link">Explore →</span>
+          </a>
+          <a href="services.html#plumbing" class="service-card reveal reveal-delay-2">
+            <div class="service-icon-wrap">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2v6m0 0c0 3.5-3 6-3 9.5A3 3 0 0012 21a3 3 0 003-3.5c0-3.5-3-6-3-9.5z" />
+              </svg>
+            </div>
+            <h3>Plumbing & Fire Safety</h3>
+            <p>Comprehensive plumbing, public health engineering, and advanced fire suppression systems to NFPA / UAE
+              Civil Defence standards.</p>
+            <span class="card-link">Explore →</span>
+          </a>
+          <a href="services.html#solar" class="service-card reveal reveal-delay-3">
+            <div class="service-icon-wrap">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="5" />
+                <line x1="12" y1="1" x2="12" y2="3" />
+                <line x1="12" y1="21" x2="12" y2="23" />
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                <line x1="1" y1="12" x2="3" y2="12" />
+                <line x1="21" y1="12" x2="23" y2="12" />
+              </svg>
+            </div>
+            <h3>Solar Energy & Data Centers</h3>
+            <p>Turnkey PV solar systems aligned with Shams Dubai, plus mission-critical Tier III/IV data center
+              infrastructure.</p>
+            <span class="card-link">Explore →</span>
+          </a>
         </div>
-        <div class="why-card reveal reveal-delay-2">
-          <div class="why-num">03</div>
-          <h3>Advanced BIM Integration</h3>
-          <p>State-of-the-art BIM via Revit software enables full system coordination, clash resolution before construction, and seamless real-time collaboration between office and field teams.</p>
+
+        <div class="text-center mt-4">
+          <a href="services.html" class="btn btn-outline reveal">View All Services</a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ─── Sectors Strip ─── -->
-  <section class="section-pad sectors-strip" id="sectors">
-    <div class="container">
-      <div class="section-header text-center">
-        <span class="eyebrow reveal">Industries We Serve</span>
-        <h2 class="section-title reveal reveal-delay-1">Our <span class="grad">Sectors</span></h2>
-      </div>
-
-      <div class="sectors-grid mt-4">
-        <a href="sectors.html#highrise" class="sector-card reveal" style="background-image: url('images/expertise/d3.png')">
-          <div class="sector-overlay">
-            <h3>High Rise & Commercial</h3>
-            <p>Iconic towers, office complexes, BMS integration</p>
-          </div>
-        </a>
-        <a href="sectors.html#hospitality" class="sector-card reveal reveal-delay-1" style="background-image: url('images/expertise/d5.png')">
-          <div class="sector-overlay">
-            <h3>Hospitality & Healthcare</h3>
-            <p>Luxury hotels, hospitals, medical gas pipelines</p>
-          </div>
-        </a>
-        <a href="sectors.html#education" class="sector-card reveal reveal-delay-2" style="background-image: url('images/expertise/d2.png')">
-          <div class="sector-overlay">
-            <h3>Education & Public Sector</h3>
-            <p>Campuses, smart classrooms, safety systems</p>
-          </div>
-        </a>
-        <a href="sectors.html#industrial" class="sector-card reveal reveal-delay-3" style="background-image: url('images/expertise/d6.png')">
-          <div class="sector-overlay">
-            <h3>Industrial & Logistics</h3>
-            <p>Warehouses, manufacturing plants, 24/7 power</p>
-          </div>
-        </a>
-        <a href="sectors.html#solar" class="sector-card reveal reveal-delay-4" style="background-image: url('images/expertise/d4.png')">
-          <div class="sector-overlay">
-            <h3>Solar & Renewables</h3>
-            <p>PV systems, DEWA integration, green MEP</p>
-          </div>
-        </a>
-        <a href="sectors.html#datacenter" class="sector-card reveal reveal-delay-5" style="background-image: url('images/expertise/d1.png')">
-          <div class="sector-overlay">
-            <h3>Data Centers</h3>
-            <p>Tier III/IV infrastructure, zero-downtime power</p>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ─── Featured Projects  ─── -->
-  <section class="section-pad featured-projects" id="projects-preview">
-    <div class="container">
-      <div class="section-header flex items-center" style="justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
-        <div>
-          <span class="eyebrow reveal">Portfolio</span>
-          <h2 class="section-title reveal reveal-delay-1">Featured <span class="grad">Projects</span></h2>
+    <!-- ─── Why Choose Us ─── -->
+    <section class="section-pad why-us" id="why-us">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="eyebrow reveal">Why Nexus Link</span>
+          <h2 class="section-title reveal reveal-delay-1">The Nexus Link <span class="grad">Advantage</span></h2>
         </div>
-        <a href="projects.html" class="btn btn-outline reveal">View All Projects</a>
-      </div>
 
-      <div class="projects-row mt-4">
-        <div class="project-card-lg reveal" style="background-image: url('images/iris_blue.png');">
-          <div class="project-info">
-            <span class="proj-cat">High-Rise Residential</span>
-            <h3>Iris Blue Tower</h3>
-            <p>G+4P+30 Floors — Dubai Marina. State-of-the-art high-rise residential MEP with vertical pressure zoning and luxury finish integrations.</p>
+        <div class="why-grid mt-4">
+          <div class="why-card reveal">
+            <div class="why-num">01</div>
+            <h3>Deep Technical Expertise</h3>
+            <p>Nearly two decades of institutional knowledge in high-rise, commercial, healthcare, and hospitality MEP
+              systems. We solve complex engineering challenges with proven mastery.</p>
+          </div>
+          <div class="why-card reveal reveal-delay-1">
+            <div class="why-num">02</div>
+            <h3>MEP Pre-Fabricated Modular</h3>
+            <p>Pioneering off-site modular production achieving up to 60% time savings, with dramatically reduced
+              on-site dust, waste, and noise — delivering superior precision and quality control.</p>
+          </div>
+          <div class="why-card reveal reveal-delay-2">
+            <div class="why-num">03</div>
+            <h3>Advanced BIM Integration</h3>
+            <p>State-of-the-art BIM via Revit software enables full system coordination, clash resolution before
+              construction, and seamless real-time collaboration between office and field teams.</p>
           </div>
         </div>
-        <div class="project-col-right">
-          <div class="project-card-sm reveal reveal-delay-1" style="background-image: url('images/ansar_gallery.png');">
+      </div>
+    </section>
+
+    <!-- ─── Sectors Strip ─── -->
+    <section class="section-pad sectors-strip" id="sectors">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="eyebrow reveal">Industries We Serve</span>
+          <h2 class="section-title reveal reveal-delay-1">Our <span class="grad">Sectors</span></h2>
+        </div>
+
+        <div class="sectors-grid mt-4">
+          <a href="sectors.html#highrise" class="sector-card reveal"
+            style="background-image: url('images/expertise/d3.png')">
+            <div class="sector-overlay">
+              <h3>High Rise & Commercial</h3>
+              <p>Iconic towers, office complexes, BMS integration</p>
+            </div>
+          </a>
+          <a href="sectors.html#hospitality" class="sector-card reveal reveal-delay-1"
+            style="background-image: url('images/expertise/d5.png')">
+            <div class="sector-overlay">
+              <h3>Hospitality & Healthcare</h3>
+              <p>Luxury hotels, hospitals, medical gas pipelines</p>
+            </div>
+          </a>
+          <a href="sectors.html#education" class="sector-card reveal reveal-delay-2"
+            style="background-image: url('images/expertise/d2.png')">
+            <div class="sector-overlay">
+              <h3>Education & Public Sector</h3>
+              <p>Campuses, smart classrooms, safety systems</p>
+            </div>
+          </a>
+          <a href="sectors.html#industrial" class="sector-card reveal reveal-delay-3"
+            style="background-image: url('images/expertise/d6.png')">
+            <div class="sector-overlay">
+              <h3>Industrial & Logistics</h3>
+              <p>Warehouses, manufacturing plants, 24/7 power</p>
+            </div>
+          </a>
+          <a href="sectors.html#solar" class="sector-card reveal reveal-delay-4"
+            style="background-image: url('images/expertise/d4.png')">
+            <div class="sector-overlay">
+              <h3>Solar & Renewables</h3>
+              <p>PV systems, DEWA integration, green MEP</p>
+            </div>
+          </a>
+          <a href="sectors.html#datacenter" class="sector-card reveal reveal-delay-5"
+            style="background-image: url('images/expertise/d1.png')">
+            <div class="sector-overlay">
+              <h3>Data Centers</h3>
+              <p>Tier III/IV infrastructure, zero-downtime power</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Featured Projects  ─── -->
+    <section class="section-pad featured-projects" id="projects-preview">
+      <div class="container">
+        <div class="section-header flex items-center"
+          style="justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+          <div>
+            <span class="eyebrow reveal">Portfolio</span>
+            <h2 class="section-title reveal reveal-delay-1">Featured <span class="grad">Projects</span></h2>
+          </div>
+          <a href="projects.html" class="btn btn-outline reveal">View All Projects</a>
+        </div>
+
+        <div class="projects-row mt-4">
+          <div class="project-card-lg reveal" style="background-image: url('images/iris_blue.png');">
             <div class="project-info">
-              <span class="proj-cat">Retail</span>
-              <h3>Ansar Gallery</h3>
+              <span class="proj-cat">High-Rise Residential</span>
+              <h3>Iris Blue Tower</h3>
+              <p>G+4P+30 Floors — Dubai Marina. State-of-the-art high-rise residential MEP with vertical pressure zoning
+                and luxury finish integrations.</p>
             </div>
           </div>
-          <div class="project-card-sm reveal reveal-delay-2" style="background-image: url('images/Souq_Al_Kabeer.png');">
-            <div class="project-info">
-              <span class="proj-cat">Mixed-Use</span>
-              <h3>Souq Al Kabeer</h3>
+          <div class="project-col-right">
+            <div class="project-card-sm reveal reveal-delay-1"
+              style="background-image: url('images/ansar_gallery.png');">
+              <div class="project-info">
+                <span class="proj-cat">Retail</span>
+                <h3>Ansar Gallery</h3>
+              </div>
+            </div>
+            <div class="project-card-sm reveal reveal-delay-2"
+              style="background-image: url('images/Souq_Al_Kabeer.png');">
+              <div class="project-info">
+                <span class="proj-cat">Mixed-Use</span>
+                <h3>Souq Al Kabeer</h3>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ─── Methodology Teaser ─── -->
-  <section class="section-pad methodology-teaser" id="methodology">
-    <div class="container">
-      <div class="two-col reverse">
-        <div class="col-text">
-          <span class="eyebrow reveal">Our Approach</span>
-          <h2 class="section-title reveal reveal-delay-1">A Proven <span class="grad">7-Step Methodology</span></h2>
-          <div class="divider reveal reveal-delay-2"></div>
-          <p class="section-desc reveal reveal-delay-2">
-            Nexus Link executes complex engineering projects through a structured, unyielding framework that guarantees success, risk mitigation, and absolute transparency at every stage.
-          </p>
-          <div class="steps-mini reveal reveal-delay-3">
-            <div class="step-mini"><span>01</span> HR & Talent Alignment</div>
-            <div class="step-mini"><span>02</span> Engineering & Design</div>
-            <div class="step-mini"><span>03</span> Procurement & Logistics</div>
-            <div class="step-mini"><span>04</span> Planning & Cost Control</div>
-            <div class="step-mini"><span>05</span> Site Construction</div>
-            <div class="step-mini"><span>06</span> QA/QC & HSE</div>
-            <div class="step-mini"><span>07</span> Testing & Handover</div>
+    <!-- ─── Methodology Teaser ─── -->
+    <section class="section-pad methodology-teaser" id="methodology">
+      <div class="container">
+        <div class="two-col reverse">
+          <div class="col-text">
+            <span class="eyebrow reveal">Our Approach</span>
+            <h2 class="section-title reveal reveal-delay-1">A Proven <span class="grad">7-Step Methodology</span></h2>
+            <div class="divider reveal reveal-delay-2"></div>
+            <p class="section-desc reveal reveal-delay-2">
+              Nexus Link executes complex engineering projects through a structured, unyielding framework that
+              guarantees success, risk mitigation, and absolute transparency at every stage.
+            </p>
+            <div class="steps-mini reveal reveal-delay-3">
+              <div class="step-mini"><span>01</span> HR & Talent Alignment</div>
+              <div class="step-mini"><span>02</span> Engineering & Design</div>
+              <div class="step-mini"><span>03</span> Procurement & Logistics</div>
+              <div class="step-mini"><span>04</span> Planning & Cost Control</div>
+              <div class="step-mini"><span>05</span> Site Construction</div>
+              <div class="step-mini"><span>06</span> QA/QC & HSE</div>
+              <div class="step-mini"><span>07</span> Testing & Handover</div>
+            </div>
+            <a href="about.html#methodology" class="btn btn-primary mt-4 reveal reveal-delay-4">Explore Methodology</a>
           </div>
-          <a href="about.html#methodology" class="btn btn-primary mt-4 reveal reveal-delay-4">Explore Methodology</a>
-        </div>
-        <div class="col-img reveal reveal-delay-2">
-          <div class="img-frame">
-            <img src="images/oman_refinery.png" alt="Nexus Link project execution" loading="lazy">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ─── CTA Banner ─── -->
-  <section class="cta-banner" id="cta">
-    <div class="cta-bg"></div>
-    <div class="container">
-      <div class="cta-content text-center">
-        <h2 class="cta-title reveal">Ready to Start Your <span class="grad">Next Project?</span></h2>
-        <p class="cta-desc reveal reveal-delay-1">Connect with our engineering directors and estimation teams to discuss your specific infrastructure requirements.</p>
-        <div class="flex items-center flex-wrap gap-2 reveal reveal-delay-2" style="justify-content: center;">
-          <a href="contact.html" class="btn btn-primary">Get In Touch</a>
-          <a href="tel:+97142802067" class="btn btn-outline">+971 4 280 2067</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ─── Footer ─── -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="index.html" class="nav-logo">NEXUS<span class="accent">LINK</span></a>
-          <p class="mt-2">Leading MEP & Infrastructure contractors delivering engineering excellence across UAE since 2004.</p>
-          <div class="footer-contact mt-3">
-            <p>📞 <a href="tel:+97142802067">+971 4 280 2067</a></p>
-            <p>✉️ <a href="mailto:info@nexuslink.ae">info@nexuslink.ae</a></p>
+          <div class="col-img reveal reveal-delay-2">
+            <div class="img-frame">
+              <img src="images/oman_refinery.png" alt="Nexus Link project execution" loading="lazy">
+            </div>
           </div>
         </div>
-        <div class="footer-col">
-          <h5>Company</h5>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="about.html#methodology">Methodology</a></li>
-            <li><a href="quality.html">Quality & HSE</a></li>
-            <li><a href="careers.html">Careers</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h5>Services</h5>
-          <ul>
-            <li><a href="services.html#mechanical">Mechanical</a></li>
-            <li><a href="services.html#electrical">Electrical</a></li>
-            <li><a href="services.html#plumbing">Plumbing & Fire</a></li>
-            <li><a href="services.html#solar">Solar Energy</a></li>
-            <li><a href="services.html#datacenter">Data Centers</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h5>Contact</h5>
-          <ul>
-            <li><span>PO Box 554639, Dubai, UAE</span></li>
-            <li><a href="tel:+97142802067">+971 4 280 2067</a></li>
-            <li><a href="mailto:info@nexuslink.ae">info@nexuslink.ae</a></li>
-            <li><span>Mon–Fri: 8:00 AM – 6:00 PM</span></li>
-            <li><a href="contact.html">Get Directions →</a></li>
-          </ul>
+      </div>
+    </section>
+
+    <!-- ─── CTA Banner ─── -->
+    <section class="cta-banner" id="cta">
+      <div class="cta-bg"></div>
+      <div class="container">
+        <div class="cta-content text-center">
+          <h2 class="cta-title reveal">Ready to Start Your <span class="grad">Next Project?</span></h2>
+          <p class="cta-desc reveal reveal-delay-1">Connect with our engineering directors and estimation teams to
+            discuss your specific infrastructure requirements.</p>
+          <div class="flex items-center flex-wrap gap-2 reveal reveal-delay-2" style="justify-content: center;">
+            <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+            <a href="tel:+97142802067" class="btn btn-outline">+971 4 280 2067</a>
+          </div>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p>© 2026 Nexus Link Electromechanical L.L.C. All rights reserved.</p>
-        <p><a href="https://www.nexuslink.ae" target="_blank">www.nexuslink.ae</a></p>
+    </section>
+
+    <!-- ─── Footer ─── -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="index.html" class="nav-logo">NEXUS<span class="accent">LINK</span></a>
+            <p class="mt-2">Leading MEP & Infrastructure contractors delivering engineering excellence across UAE since
+              2004.</p>
+            <div class="footer-contact mt-3">
+              <p>📞 <a href="tel:+97142802067">+971 4 280 2067</a></p>
+              <p>✉️ <a href="mailto:info@nexuslink.ae">info@nexuslink.ae</a></p>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h5>Company</h5>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="about.html#methodology">Methodology</a></li>
+              <li><a href="quality.html">Quality & HSE</a></li>
+              <li><a href="careers.html">Careers</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Services</h5>
+            <ul>
+              <li><a href="services.html#mechanical">Mechanical</a></li>
+              <li><a href="services.html#electrical">Electrical</a></li>
+              <li><a href="services.html#plumbing">Plumbing & Fire</a></li>
+              <li><a href="services.html#solar">Solar Energy</a></li>
+              <li><a href="services.html#datacenter">Data Centers</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Contact</h5>
+            <ul>
+              <li><span>PO Box 554639, Dubai, UAE</span></li>
+              <li><a href="tel:+97142802067">+971 4 280 2067</a></li>
+              <li><a href="mailto:info@nexuslink.ae">info@nexuslink.ae</a></li>
+              <li><span>Mon–Fri: 8:00 AM – 6:00 PM</span></li>
+              <li><a href="contact.html">Get Directions →</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 Nexus Link Electromechanical L.L.C. All rights reserved.</p>
+          <p><a href="https://www.nexuslink.ae" target="_blank">www.nexuslink.ae</a></p>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-</div><!-- /page-wrapper -->
+  </div><!-- /page-wrapper -->
 
-<button id="scroll-top" aria-label="Scroll to top">↑</button>
+  <button id="scroll-top" aria-label="Scroll to top">↑</button>
 
-<!-- Scripts -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-<script src="assets/js/three-bg.js"></script>
-<script src="assets/js/nav.js"></script>
-<script src="assets/js/home.js"></script>
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="assets/js/three-bg.js"></script>
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/home.js"></script>
 
-    <!-- Bootstrap 5 JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc4s9bIOgUxi8T/jzmW0xhE6bVsa6Kcd0ggVs8ul0/XK" crossorigin="anonymous"></script>
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc4s9bIOgUxi8T/jzmW0xhE6bVsa6Kcd0ggVs8ul0/XK"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
