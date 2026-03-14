@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#102439" />
+      <stop offset="52%" stop-color="#1a3f5f" />
+      <stop offset="100%" stop-color="#1f5b7b" />
+    </linearGradient>
+    <radialGradient id="glow-left" cx="0.12" cy="0.2" r="0.56">
+      <stop offset="0%" stop-color="#40c8b9" stop-opacity="0.65" />
+      <stop offset="100%" stop-color="#40c8b9" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="glow-right" cx="0.88" cy="0.24" r="0.58">
+      <stop offset="0%" stop-color="#49b9ff" stop-opacity="0.62" />
+      <stop offset="100%" stop-color="#49b9ff" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#bdeaff" stop-opacity="0.46" />
+      <stop offset="100%" stop-color="#7acfe1" stop-opacity="0" />
+    </linearGradient>
+    <pattern id="grid" width="88" height="88" patternUnits="userSpaceOnUse">
+      <path d="M88 0H0V88" fill="none" stroke="#d8f2ff" stroke-opacity="0.3" stroke-width="1" />
+    </pattern>
+    <pattern id="dots" width="176" height="176" patternUnits="userSpaceOnUse">
+      <circle cx="28" cy="28" r="2" fill="#d8f2ff" fill-opacity="0.36" />
+      <circle cx="146" cy="42" r="1.6" fill="#7acfe1" fill-opacity="0.36" />
+      <circle cx="96" cy="128" r="2" fill="#d8f2ff" fill-opacity="0.26" />
+      <circle cx="42" cy="144" r="1.4" fill="#7acfe1" fill-opacity="0.28" />
+    </pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)" />
+  <rect width="1920" height="1080" fill="url(#glow-left)" />
+  <rect width="1920" height="1080" fill="url(#glow-right)" />
+  <polygon points="0,120 760,0 1280,0 280,540" fill="url(#beam)" opacity="0.36" />
+  <polygon points="1220,1080 1920,600 1920,1080" fill="url(#beam)" opacity="0.24" />
+  <rect width="1920" height="1080" fill="url(#grid)" opacity="0.58" />
+  <rect width="1920" height="1080" fill="url(#dots)" opacity="0.55" />
+  <g fill="none" stroke="#e6f8ff" stroke-opacity="0.27" stroke-width="2">
+    <path d="M120 760L480 420L880 560L1240 260L1710 360" />
+    <path d="M240 930L610 640L980 760L1410 500L1800 560" />
+  </g>
+  <g fill="none" stroke="#7acfe1" stroke-opacity="0.3" stroke-width="1.4">
+    <path d="M160 300L500 180L760 260L1110 120L1490 180L1780 90" />
+    <path d="M80 500L360 360L690 430L990 300L1350 350L1820 220" />
+  </g>
+</svg>

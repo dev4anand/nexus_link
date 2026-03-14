@@ -37,21 +37,45 @@
     const menuClose  = document.querySelector('.mobile-menu-close');
 
     if (hamburger && mobileMenu) {
-      hamburger.addEventListener('click', () => {
-        mobileMenu.classList.add('open');
-        document.body.style.overflow = 'hidden';
-        mobileMenu.querySelectorAll('a').forEach((a, i) => {
-          a.style.animationDelay = `${i * 0.07}s`;
-        });
-      });
+      const menuLinks = mobileMenu.querySelectorAll('a');
 
-      const closeFn = () => {
-        mobileMenu.classList.remove('open');
-        document.body.style.overflow = '';
+      const setMenuOpen = (open) => {
+        mobileMenu.classList.toggle('open', open);
+        hamburger.setAttribute('aria-expanded', String(open));
+        document.body.style.overflow = open ? 'hidden' : '';
+
+        if (open) {
+          menuLinks.forEach((a, i) => {
+            a.style.animationDelay = `${i * 0.07}s`;
+          });
+        }
       };
 
-      if (menuClose) menuClose.addEventListener('click', closeFn);
-      mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeFn));
+      const closeFn = () => setMenuOpen(false);
+      const isOpen = () => mobileMenu.classList.contains('open');
+
+      hamburger.setAttribute('aria-expanded', 'false');
+      hamburger.setAttribute('aria-controls', mobileMenu.id || 'mobile-menu');
+      hamburger.addEventListener('click', () => setMenuOpen(!isOpen()));
+
+      if (menuClose) {
+        menuClose.textContent = 'X';
+        menuClose.setAttribute('aria-label', 'Close menu');
+        menuClose.addEventListener('click', closeFn);
+      }
+
+      menuLinks.forEach(a => a.addEventListener('click', closeFn));
+      mobileMenu.addEventListener('click', (e) => {
+        if (e.target === mobileMenu) closeFn();
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && isOpen()) closeFn();
+      });
+
+      window.addEventListener('resize', () => {
+        if (window.innerWidth > 1024 && isOpen()) closeFn();
+      });
     }
 
     // ── Theme Toggle ──
