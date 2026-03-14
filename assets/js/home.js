@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (heroBg) {
     window.addEventListener('scroll', () => {
       const scrolled = window.scrollY;
-      heroBg.style.transform = `scale(1.05) translateY(${scrolled * 0.15}px)`;
+      heroBg.style.transform = `scale(1.02) translateY(${scrolled * 0.06}px)`;
     });
   }
 });

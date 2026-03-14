@@ -13,32 +13,30 @@
   position: absolute;
   inset: 0;
   z-index: 0;
-  background-image: url('../../images/hero_pattern.svg');
+  background-image:
+    linear-gradient(108deg, rgba(10, 32, 55, 0.68), rgba(10, 32, 55, 0.45)),
+    url('../../images/company_image.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  transform: scale(1.02);
-  filter: saturate(0.9) brightness(0.6) contrast(1.03);
+  transform: scale(1.01);
+  filter: saturate(1.02) brightness(1.06) contrast(1.01);
 }
 
 .page-hero-overlay {
   position: absolute;
   inset: 0;
   z-index: 1;
-  background:
-    linear-gradient(to bottom, rgba(5, 16, 27, 0.24), rgba(5, 16, 27, 0.7)),
-    linear-gradient(96deg, rgba(5, 16, 27, 0.15), transparent 48%, rgba(5, 16, 27, 0.14));
+  /* background: linear-gradient(to bottom, rgba(8, 27, 46, 0.08), rgba(8, 27, 46, 0.44)); */
 }
 
 [data-theme='light'] .page-hero-bg {
-  filter: saturate(0.82) brightness(1.12) contrast(0.95);
+  filter: saturate(1.01) brightness(1.12) contrast(1);
 }
 
-[data-theme='light'] .page-hero-overlay {
-  background:
-    linear-gradient(to bottom, rgba(246, 251, 255, 0.22), rgba(226, 236, 246, 0.52)),
-    linear-gradient(96deg, rgba(246, 251, 255, 0.14), transparent 48%, rgba(226, 236, 246, 0.2));
-}
+/* [data-theme='light'] .page-hero-overlay {
+  background: linear-gradient(to bottom, rgba(248, 252, 255, 0.04), rgba(20, 54, 84, 0.34));
+} */
 
 .page-hero-title {
   margin: 0.72rem 0 0.88rem;
@@ -48,6 +46,11 @@
   letter-spacing: -0.028em;
   color: #f6fcff;
   font-weight: 700;
+  text-shadow: 0 3px 16px rgba(7, 24, 42, 0.45);
+}
+
+.page-hero-title .grad {
+  color: #d9eafe;
 }
 
 .page-hero-desc {
@@ -55,14 +58,29 @@
   color: rgba(224, 237, 247, 0.86);
   font-size: 0.99rem;
   line-height: 1.75;
+  text-shadow: 0 2px 10px rgba(8, 27, 46, 0.35);
+}
+
+.page-hero .breadcrumb li {
+  color: rgba(224, 237, 247, 0.78);
+}
+
+.page-hero .breadcrumb li a {
+  color: #ffffff;
+}
+
+.page-hero .eyebrow {
+  color: #e6f2fc;
+  border-color: rgba(230, 242, 252, 0.38);
+  background: rgba(11, 35, 58, 0.38);
 }
 
 [data-theme='light'] .page-hero-title {
-  color: var(--clr-text);
+  color: #ffffff;
 }
 
 [data-theme='light'] .page-hero-desc {
-  color: var(--clr-text-muted);
+  color: rgba(237, 245, 252, 0.88);
 }
 
 .services-page-hero,
@@ -77,28 +95,66 @@
   overflow: hidden;
 }
 
+.about-hero .page-hero-bg {
+  background-image:
+    linear-gradient(108deg, rgba(10, 32, 55, 0.44), rgba(10, 32, 55, 0.22)),
+    url('../../images/company_image.png');
+}
+
+.services-page-hero .page-hero-bg {
+  background-image:
+    linear-gradient(108deg, rgba(10, 32, 55, 0.44), rgba(10, 32, 55, 0.22)),
+    url('../../images/spring_infrastructure.png');
+}
+
+.sectors-hero .page-hero-bg {
+  background-image:
+    linear-gradient(108deg, rgba(10, 32, 55, 0.44), rgba(10, 32, 55, 0.22)),
+    url('../../images/Garden_furnished_apartments.png');
+}
+
+.projects-hero .page-hero-bg {
+  background-image:
+    linear-gradient(108deg, rgba(10, 32, 55, 0.44), rgba(10, 32, 55, 0.22)),
+    url('../../images/oman_refinery.png');
+}
+
+.quality-hero .page-hero-bg {
+  background-image:
+    linear-gradient(108deg, rgba(10, 32, 55, 0.44), rgba(10, 32, 55, 0.22)),
+    url('../../images/petrofac_oman_refinery.png');
+}
+
+.careers-hero .page-hero-bg {
+  background-image:
+    linear-gradient(108deg, rgba(10, 32, 55, 0.44), rgba(10, 32, 55, 0.22)),
+    url('../../images/image.png');
+}
+
+.contact-hero .page-hero-bg {
+  background-image:
+    linear-gradient(108deg, rgba(10, 32, 55, 0.44), rgba(10, 32, 55, 0.22)),
+    url('../../images/iris_blue.png');
+}
+
 .cta-banner-simple {
   padding: 4.9rem 0;
   border-top: 1px solid var(--clr-border);
-  background:
-    radial-gradient(760px 260px at 50% 20%, rgba(57, 180, 164, 0.16), transparent 74%),
-    radial-gradient(900px 320px at 50% 100%, rgba(35, 136, 206, 0.14), transparent 78%);
+  background: linear-gradient(180deg, rgba(17, 44, 72, 0.22), rgba(17, 44, 72, 0.12));
 }
 
 [data-theme='light'] .cta-banner-simple {
-  background:
-    radial-gradient(700px 240px at 50% 20%, rgba(13, 143, 134, 0.1), transparent 74%),
-    radial-gradient(840px 300px at 50% 100%, rgba(30, 110, 169, 0.1), transparent 78%);
+  background: linear-gradient(180deg, rgba(250, 253, 255, 0.88), rgba(235, 243, 250, 0.78));
 }
 
 .alt-bg {
-  background: linear-gradient(180deg, rgba(12, 30, 47, 0.32), rgba(12, 30, 47, 0.12));
+  background: linear-gradient(180deg, rgba(17, 44, 72, 0.26), rgba(17, 44, 72, 0.1));
   border-top: 1px solid var(--clr-border);
   border-bottom: 1px solid var(--clr-border);
 }
 
 [data-theme='light'] .alt-bg {
-  background: linear-gradient(180deg, rgba(231, 241, 249, 0.68), rgba(237, 245, 251, 0.34));
+  background: linear-gradient(180deg, rgba(251, 254, 255, 0.84), rgba(239, 246, 252, 0.58));
 }
 
 /* Shared cards */
@@ -114,7 +170,7 @@
 .contact-form-wrap,
 .location-card {
   border: 1px solid var(--clr-border);
-  background: linear-gradient(160deg, rgba(16, 38, 58, 0.68), rgba(16, 38, 58, 0.2));
+  background: linear-gradient(160deg, rgba(16, 43, 73, 0.56), rgba(16, 43, 73, 0.2));
 }
 
 [data-theme='light'] .mv-card,
@@ -128,7 +184,7 @@
 [data-theme='light'] .apply-card,
 [data-theme='light'] .contact-form-wrap,
 [data-theme='light'] .location-card {
-  background: linear-gradient(160deg, rgba(255, 255, 255, 0.9), rgba(239, 247, 253, 0.74));
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.96), rgba(243, 248, 253, 0.86));
 }
 
 .mv-card:hover,
@@ -269,20 +325,20 @@
 .mission-vision {
   border-top: 1px solid var(--clr-border);
   border-bottom: 1px solid var(--clr-border);
-  background: linear-gradient(180deg, rgba(11, 27, 43, 0.3), rgba(11, 27, 43, 0.1));
+  background: linear-gradient(180deg, rgba(17, 44, 72, 0.25), rgba(17, 44, 72, 0.08));
 }
 
 [data-theme='light'] .mission-vision {
-  background: linear-gradient(180deg, rgba(231, 241, 249, 0.68), rgba(237, 245, 251, 0.34));
+  background: linear-gradient(180deg, rgba(250, 253, 255, 0.82), rgba(239, 246, 252, 0.52));
 }
 
 .methodology-section {
   border-top: 1px solid var(--clr-border);
-  background: linear-gradient(180deg, rgba(12, 32, 50, 0.44), transparent 74%);
+  background: linear-gradient(180deg, rgba(17, 44, 72, 0.32), transparent 74%);
 }
 
 [data-theme='light'] .methodology-section {
-  background: linear-gradient(180deg, rgba(231, 241, 249, 0.7), transparent 74%);
+  background: linear-gradient(180deg, rgba(239, 246, 252, 0.74), transparent 74%);
 }
 
 .methodology-timeline {
@@ -406,10 +462,10 @@
   font-weight: 700;
 }
 
-.service-badge.mech { background: rgba(57, 180, 164, 0.14); border: 1px solid rgba(57, 180, 164, 0.35); color: #7bddcf; }
-.service-badge.elec { background: rgba(35, 136, 206, 0.14); border: 1px solid rgba(35, 136, 206, 0.35); color: #90d2ff; }
-.service-badge.plumb { background: rgba(89, 167, 214, 0.14); border: 1px solid rgba(89, 167, 214, 0.35); color: #a2d9ff; }
-.service-badge.solar { background: rgba(212, 160, 85, 0.14); border: 1px solid rgba(212, 160, 85, 0.34); color: #efc886; }
+.service-badge.mech { background: rgba(31, 95, 153, 0.16); border: 1px solid rgba(31, 95, 153, 0.35); color: #9ec7ea; }
+.service-badge.elec { background: rgba(22, 63, 115, 0.16); border: 1px solid rgba(22, 63, 115, 0.35); color: #90b8e0; }
+.service-badge.plumb { background: rgba(53, 112, 166, 0.16); border: 1px solid rgba(53, 112, 166, 0.35); color: #a6caeb; }
+.service-badge.solar { background: rgba(166, 121, 62, 0.16); border: 1px solid rgba(166, 121, 62, 0.34); color: #e3c48e; }
 
 .service-intro {
   margin-bottom: 1.8rem;
@@ -534,10 +590,7 @@
   font-family: var(--font-display) !important;
   font-weight: 700;
   line-height: 1;
-  background: var(--gradient-accent);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--clr-accent-2);
 }
 
 .pstat span:first-child {
@@ -605,7 +658,7 @@
 }
 
 .proj-item:hover .proj-overlay {
-  background: linear-gradient(to top, rgba(8, 43, 68, 0.95), rgba(7, 19, 31, 0.24) 62%);
+  background: linear-gradient(to top, rgba(13, 52, 82, 0.95), rgba(7, 19, 31, 0.24) 62%);
 }
 
 .proj-meta { width: 100%; }
@@ -1078,8 +1131,8 @@
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(520px 220px at 50% 50%, rgba(57, 180, 164, 0.18), transparent 76%),
-    radial-gradient(520px 240px at 50% 60%, rgba(35, 136, 206, 0.2), transparent 76%);
+    radial-gradient(520px 220px at 50% 50%, rgba(31, 95, 153, 0.2), transparent 76%),
+    radial-gradient(520px 240px at 50% 60%, rgba(47, 116, 182, 0.18), transparent 76%);
 }
 
 .map-placeholder {
@@ -1105,7 +1158,7 @@
   height: 14px;
   border-radius: 50%;
   background: var(--clr-accent);
-  box-shadow: 0 0 14px rgba(57, 180, 164, 0.7);
+  box-shadow: 0 0 10px rgba(31, 95, 153, 0.42);
 }
 
 .pin-ring {

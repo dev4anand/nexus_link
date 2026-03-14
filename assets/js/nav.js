@@ -9,7 +9,7 @@
   // ── Apply saved theme ASAP (before DOMContentLoaded) to avoid flash ──
   (function () {
     var saved = localStorage.getItem('nexuslink-theme');
-    if (saved) document.documentElement.setAttribute('data-theme', saved);
+    document.documentElement.setAttribute('data-theme', saved || 'light');
   })();
 
   document.addEventListener('DOMContentLoaded', function () {
@@ -90,7 +90,7 @@
     // Wire every .theme-toggle button on the page
     document.querySelectorAll('.theme-toggle').forEach(btn => {
       btn.addEventListener('click', () => {
-        const current = html.getAttribute('data-theme') || 'dark';
+        const current = html.getAttribute('data-theme') || 'light';
         applyTheme(current === 'light' ? 'dark' : 'light');
       });
     });
