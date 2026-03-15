@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // Hero background video: play smoothly, fallback to image if autoplay/playback fails
+  // Hero background video: play smoothly, fallback to base gradient if autoplay/playback fails
   const hero = document.querySelector('.hero');
   const heroVideo = document.getElementById('hero-video');
 

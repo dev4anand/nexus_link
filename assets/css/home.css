@@ -17,12 +17,9 @@
 
 .hero-bg {
   background:
-    linear-gradient(108deg, rgba(9, 30, 52, 0.46), rgba(9, 30, 52, 0.2)),
-    url('../../images/image.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  filter: saturate(1.06) brightness(1.08) contrast(1.02);
+    radial-gradient(900px 420px at 10% 20%, rgba(86, 146, 204, 0.2), transparent 72%),
+    linear-gradient(130deg, #183653 0%, #21486e 48%, #183653 100%);
+  filter: saturate(1.04) brightness(1.02) contrast(1);
   z-index: 0;
   transition: transform 0.4s ease;
 }
@@ -50,12 +47,9 @@
 
 [data-theme='light'] .hero-bg {
   background:
-    linear-gradient(108deg, rgba(20, 53, 84, 0.3), rgba(20, 53, 84, 0.1)),
-    url('../../images/image.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  filter: saturate(1.04) brightness(1.1) contrast(1.01);
+    radial-gradient(900px 420px at 10% 20%, rgba(106, 162, 216, 0.2), transparent 72%),
+    linear-gradient(130deg, #1f4468 0%, #285580 48%, #1f4468 100%);
+  filter: saturate(1.02) brightness(1.04) contrast(1);
 }
 
 [data-theme='light'] .hero-video {
