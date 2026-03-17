@@ -8,8 +8,14 @@
 
   // ── Apply saved theme ASAP (before DOMContentLoaded) to avoid flash ──
   (function () {
-    var saved = localStorage.getItem('nexuslink-theme');
-    document.documentElement.setAttribute('data-theme', saved || 'light');
+    var saved = null;
+    try {
+      saved = localStorage.getItem('nexuslink-theme');
+    } catch (e) {
+      saved = null;
+    }
+    var defaultTheme = document.documentElement.getAttribute('data-theme') || 'light';
+    document.documentElement.setAttribute('data-theme', saved || defaultTheme);
   })();
 
   document.addEventListener('DOMContentLoaded', function () {
@@ -84,7 +90,11 @@
 
     function applyTheme(theme) {
       html.setAttribute('data-theme', theme);
-      localStorage.setItem(STORAGE_KEY, theme);
+      try {
+        localStorage.setItem(STORAGE_KEY, theme);
+      } catch (e) {
+        // Storage can be blocked by strict privacy settings.
+      }
     }
 
     // Wire every .theme-toggle button on the page

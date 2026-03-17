@@ -28,6 +28,13 @@ document.addEventListener('DOMContentLoaded', function () {
   if (hero && heroVideo) {
     let fallbackApplied = false;
 
+    // Improve autoplay reliability on mobile browsers.
+    heroVideo.muted = true;
+    heroVideo.defaultMuted = true;
+    heroVideo.playsInline = true;
+    heroVideo.setAttribute('playsinline', '');
+    heroVideo.setAttribute('webkit-playsinline', '');
+
     const applyFallback = () => {
       if (fallbackApplied) return;
       fallbackApplied = true;
@@ -42,26 +49,47 @@ document.addEventListener('DOMContentLoaded', function () {
 
       if (playPromise && typeof playPromise.then === 'function') {
         playPromise.catch(() => {
-          applyFallback();
+          // If source truly cannot be loaded, fallback; otherwise allow later retries.
+          if (heroVideo.networkState === HTMLMediaElement.NETWORK_NO_SOURCE) {
+            applyFallback();
+          }
         });
       } else if (heroVideo.paused) {
-        applyFallback();
+        if (heroVideo.networkState === HTMLMediaElement.NETWORK_NO_SOURCE) {
+          applyFallback();
+        }
       }
     };
 
     heroVideo.addEventListener('error', applyFallback);
-    heroVideo.addEventListener('stalled', applyFallback);
-    heroVideo.addEventListener('abort', applyFallback);
+    heroVideo.addEventListener('stalled', () => {
+      if (!fallbackApplied) {
+        window.setTimeout(() => {
+          if (!fallbackApplied && heroVideo.paused) {
+            tryPlayVideo();
+          }
+        }, 600);
+      }
+    });
+    heroVideo.addEventListener('abort', () => {
+      if (!fallbackApplied && heroVideo.paused) {
+        tryPlayVideo();
+      }
+    });
 
     heroVideo.addEventListener('canplay', () => {
       tryPlayVideo();
     });
 
     window.setTimeout(() => {
-      if (heroVideo.paused || heroVideo.readyState < 2) {
+      if (heroVideo.readyState === 0 && heroVideo.networkState === HTMLMediaElement.NETWORK_NO_SOURCE) {
         applyFallback();
+        return;
       }
-    }, 2500);
+      if (heroVideo.paused) {
+        tryPlayVideo();
+      }
+    }, 7000);
 
     document.addEventListener('visibilitychange', () => {
       if (document.hidden) {
