@@ -98,31 +98,31 @@
 .about-hero .page-hero-bg {
   background-image:
     linear-gradient(108deg, rgba(10, 32, 55, 0.44), rgba(10, 32, 55, 0.22)),
-    url('../../images/company_image.png');
+    url('../../images/about_us.jpg');
 }
 
 .services-page-hero .page-hero-bg {
   background-image:
     linear-gradient(108deg, rgba(10, 32, 55, 0.44), rgba(10, 32, 55, 0.22)),
-    url('../../images/spring_infrastructure.png');
+    url('../../images/services.jpg');
 }
 
 .sectors-hero .page-hero-bg {
   background-image:
     linear-gradient(108deg, rgba(10, 32, 55, 0.44), rgba(10, 32, 55, 0.22)),
-    url('../../images/Garden_furnished_apartments.png');
+    url('../../images/sectors.jpg');
 }
 
 .projects-hero .page-hero-bg {
   background-image:
     linear-gradient(108deg, rgba(10, 32, 55, 0.44), rgba(10, 32, 55, 0.22)),
-    url('../../images/oman_refinery.png');
+    url('../../images/projects.jpg');
 }
 
 .quality-hero .page-hero-bg {
   background-image:
     linear-gradient(108deg, rgba(10, 32, 55, 0.44), rgba(10, 32, 55, 0.22)),
-    url('../../images/petrofac_oman_refinery.png');
+    url('../../images/quality.jpg');
 }
 
 .careers-hero .page-hero-bg {
