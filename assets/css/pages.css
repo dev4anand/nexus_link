@@ -776,7 +776,22 @@
 .tc-card,
 .benefit-card,
 .role-card {
-  padding: 1.8rem;
+  padding: 2rem;
+  background: color-mix(in srgb, var(--clr-surface) 90%, transparent);
+  border: 1px solid var(--clr-border);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.quality-card:hover,
+.tc-card:hover,
+.benefit-card:hover,
+.role-card:hover {
+  border-color: color-mix(in srgb, var(--clr-accent) 50%, transparent);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
 }
 
 .hse-stat {
@@ -808,8 +823,38 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 2px;
+  height: 4px;
   background: var(--gradient-accent);
+}
+
+.qc-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0 0;
+  flex-grow: 1;
+}
+
+.qc-list li {
+  position: relative;
+  padding: 0.8rem 0 0.8rem 1.5rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--clr-border) 60%, transparent);
+  color: var(--clr-text-muted);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.qc-list li:last-child {
+  border-bottom: none;
+}
+
+.qc-list li::before {
+  content: '+';
+  position: absolute;
+  left: 0;
+  top: 0.75rem;
+  color: var(--clr-accent);
+  font-weight: 700;
+  font-size: 1.1rem;
 }
 
 .qc-icon,
