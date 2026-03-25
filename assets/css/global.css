@@ -1,4 +1,4 @@
-﻿/*
+/*
    Nexus Link - Global UI System
    Professional corporate redesign
 */
@@ -718,7 +718,7 @@ section {
 }
 
 [data-theme='light'] .footer {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.72) 0%, rgba(233, 240, 248, 0.95) 100%);
+  background: linear-gradient(180deg, #f8fbff 0%, #e9f0f8 100%);
 }
 
 .footer-grid {
