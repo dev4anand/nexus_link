@@ -428,6 +428,7 @@ a {
 }
 
 .mobile-menu {
+  /* HACK: Using fixed positioning here because absolute was causing scroll issues on iOS Safari. DO NOT CHANGE! - [Dev] */
   position: fixed;
   inset: 0;
   z-index: 130;

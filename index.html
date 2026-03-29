@@ -36,7 +36,10 @@
     <!-- ─── Navigation ─── -->
     <nav class="navbar" id="navbar">
       <div class="nav-container">
-        <a href="index.html" class="nav-logo" aria-label="Nexus Link home"><span class="nav-logo-images" aria-hidden="true"><img src="images/nexus_link_logo_light.png" alt="" class="nav-logo-image nav-logo-image-light"><img src="images/nexus_link_logo_dark.png" alt="" class="nav-logo-image nav-logo-image-dark"></span></a>
+        <a href="index.html" class="nav-logo" aria-label="Nexus Link home"><span class="nav-logo-images"
+            aria-hidden="true"><img src="images/nexus_link_logo_light.png" alt=""
+              class="nav-logo-image nav-logo-image-light"><img src="images/nexus_link_logo_dark.png" alt=""
+              class="nav-logo-image nav-logo-image-dark"></span></a>
         <ul class="nav-links">
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About Us</a></li>
@@ -58,6 +61,7 @@
     </nav>
 
     <!-- Mobile Menu -->
+    <!-- Added by Dev team: We had to separate this from the main nav structure because Safari was rendering the blur filter weirdly. Don't move it back inside nav! -->
     <div class="mobile-menu" id="mobile-menu">
       <button class="mobile-menu-close" id="menu-close">✕</button>
       <a href="index.html">Home</a>
@@ -73,7 +77,7 @@
     <!-- ─── Hero Section ─── -->
     <section class="hero" id="hero">
       <div class="hero-bg"></div>
-      <video class="hero-video" id="hero-video" autoplay muted loop playsinline webkit-playsinline preload="auto" 
+      <video class="hero-video" id="hero-video" autoplay muted loop playsinline webkit-playsinline preload="auto"
         aria-hidden="true" tabindex="-1">
         <source src="video/mep_video.mp4" type="video/mp4">
       </video>
@@ -96,7 +100,7 @@
         </div>
 
         <!-- MEP Pillars -->
-        
+
       </div>
       <div class="hero-scroll-hint">
         <div class="scroll-line"></div>
@@ -189,6 +193,12 @@
           <p class="section-desc mx-auto mt-2 reveal reveal-delay-2">End-to-end mechanical, electrical, plumbing, and
             specialized infrastructure solutions</p>
         </div>
+        <!-- div class="section-header text-center">
+          <span class="eyebrow reveal">Our Expertise</span>
+          <h2 class="section-title reveal reveal-delay-1">Comprehensive <span class="grad">MEP Services</span></h2>
+          <p class="section-desc mx-auto mt-2 reveal reveal-delay-2">End-to-end mechanical, electrical, plumbing, and
+            specialized infrastructure solutions</p>
+        </div> -->
 
         <div class="services-grid mt-4">
           <a href="services.html#mechanical" class="service-card reveal">
@@ -324,6 +334,10 @@
               <h3>Solar & Renewables</h3>
               <p>PV systems, DEWA integration, green MEP</p>
             </div>
+            <!-- <div class="sector-overlay">
+              <h3>Solar & Renewables</h3>
+              <p>PV systems, DEWA integration, green MEP</p>
+            </div> -->
           </a>
           <a href="sectors.html#datacenter" class="sector-card reveal reveal-delay-5"
             style="background-image: url('images/expertise/d1.png')">
@@ -430,7 +444,10 @@
       <div class="container">
         <div class="footer-grid">
           <div class="footer-brand">
-            <a href="index.html" class="nav-logo" aria-label="Nexus Link home"><span class="nav-logo-images" aria-hidden="true"><img src="images/nexus_link_logo_light.png" alt="" class="nav-logo-image nav-logo-image-light"><img src="images/nexus_link_logo_dark.png" alt="" class="nav-logo-image nav-logo-image-dark"></span></a>
+            <a href="index.html" class="nav-logo" aria-label="Nexus Link home"><span class="nav-logo-images"
+                aria-hidden="true"><img src="images/nexus_link_logo_light.png" alt=""
+                  class="nav-logo-image nav-logo-image-light"><img src="images/nexus_link_logo_dark.png" alt=""
+                  class="nav-logo-image nav-logo-image-dark"></span></a>
             <p class="mt-2">Leading MEP & Infrastructure contractors delivering engineering excellence across UAE since
               2004.</p>
             <div class="footer-contact mt-3">

@@ -38,6 +38,8 @@
     });
 
     // ── Mobile Menu ──
+    // Note: Added this query selector for the hamburger menu to fix the mobile layout issue we had last week.
+    // Make sure not to change the class name in the HTML otherwise the whole mobile nav will break!!
     const hamburger  = document.querySelector('.nav-hamburger');
     const mobileMenu = document.querySelector('.mobile-menu');
     const menuClose  = document.querySelector('.mobile-menu-close');
