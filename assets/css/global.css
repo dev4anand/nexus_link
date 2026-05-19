@@ -181,6 +181,55 @@ a {
   z-index: 1;
 }
 
+html:not(.site-loaded) .page-wrapper::before,
+html:not(.site-loaded) .page-wrapper::after {
+  position: fixed;
+  z-index: 9999;
+  pointer-events: none;
+  transition: opacity 0.38s ease, visibility 0.38s ease;
+}
+
+html:not(.site-loaded) .page-wrapper::before {
+  content: 'NEXUS LINK';
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding-top: 4.6rem;
+  background:
+    linear-gradient(180deg, rgba(16, 33, 54, 0.96), rgba(22, 45, 71, 0.98));
+  color: #f5fbff;
+  font-family: var(--font-display) !important;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-shadow: 0 8px 22px rgba(2, 16, 30, 0.34);
+}
+
+html:not(.site-loaded) .page-wrapper::after {
+  content: '';
+  top: calc(50% - 1.55rem);
+  left: calc(50% - 1.05rem);
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 50%;
+  border: 2px solid rgba(141, 184, 224, 0.24);
+  border-top-color: var(--clr-accent-3);
+  box-shadow: 0 0 24px rgba(45, 109, 169, 0.28);
+  animation: pageLoaderSpin 0.78s linear infinite;
+}
+
+html.site-loaded .page-wrapper::before,
+html.site-loaded .page-wrapper::after {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@keyframes pageLoaderSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .navbar {
   position: fixed;
   top: 1.2rem;

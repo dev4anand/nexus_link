@@ -18,6 +18,29 @@
     document.documentElement.setAttribute('data-theme', saved || defaultTheme);
   })();
 
+  // ── Page loader: keep first paint tidy while hero media settles ──
+  (function () {
+    var html = document.documentElement;
+    var startedAt = Date.now();
+    var minVisibleMs = 520;
+    var maxVisibleMs = 2400;
+
+    function hideLoader() {
+      var elapsed = Date.now() - startedAt;
+      var delay = Math.max(0, minVisibleMs - elapsed);
+      window.setTimeout(function () {
+        html.classList.add('site-loaded');
+      }, delay);
+    }
+
+    if (document.readyState === 'complete') {
+      hideLoader();
+    } else {
+      window.addEventListener('load', hideLoader, { once: true });
+      window.setTimeout(hideLoader, maxVisibleMs);
+    }
+  })();
+
   document.addEventListener('DOMContentLoaded', function () {
 
     // ── Navbar Scroll Effect ──
