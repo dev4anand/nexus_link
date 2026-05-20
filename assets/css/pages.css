@@ -405,6 +405,30 @@
   gap: 0.6rem;
 }
 
+.services-page-hero .service-pills {
+  gap: 0.74rem;
+}
+
+.services-page-hero .service-pills .pill {
+  min-width: 130px;
+  border-color: rgba(255, 255, 255, 0.34);
+  background: rgba(10, 28, 46, 0.18);
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: 0 1px 8px rgba(6, 20, 34, 0.42);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.services-page-hero .service-pills .pill:hover,
+.services-page-hero .service-pills .pill.active,
+[data-theme='light'] .services-page-hero .service-pills .pill:hover,
+[data-theme='light'] .services-page-hero .service-pills .pill.active {
+  color: #ffffff;
+  border-color: rgba(141, 184, 224, 0.72);
+  background: rgba(31, 95, 153, 0.28);
+}
+
 .pill,
 .stab {
   display: inline-flex;
