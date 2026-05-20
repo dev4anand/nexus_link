@@ -1254,9 +1254,43 @@
   content: '';
   position: absolute;
   inset: 0;
+  z-index: 0;
+  pointer-events: none;
   background:
     radial-gradient(520px 220px at 50% 50%, rgba(31, 95, 153, 0.2), transparent 76%),
     radial-gradient(520px 240px at 50% 60%, rgba(47, 116, 182, 0.18), transparent 76%);
+}
+
+.lc-map iframe {
+  position: relative;
+  z-index: 1;
+}
+
+.map-open-link {
+  position: absolute;
+  top: 0.55rem;
+  left: 0.55rem;
+  z-index: 3;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 0.36rem;
+  min-width: 178px;
+  min-height: 46px;
+  padding: 0.62rem 1rem;
+  border-radius: 3px;
+  background: #ffffff;
+  color: #1a73e8;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(33, 49, 66, 0.26);
+}
+
+.map-open-link:hover {
+  color: #0b57d0;
+  background: #ffffff;
 }
 
 .map-placeholder {
@@ -1348,6 +1382,10 @@
     border-left: none;
     border-top: 1px solid var(--clr-border);
     min-height: 210px;
+  }
+
+  .map-open-link {
+    display: inline-flex;
   }
 
   .proj-masonry {
